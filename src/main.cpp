@@ -311,7 +311,7 @@ int main() {
         }
         cout << "Would you like to perform another operation? [Y/n] ";
         cin >> response;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clears out the input stream
     } while (response == 'Y' || response == 'y');
     cout << "Have a nice day.";
     cout << endl;
