@@ -16,7 +16,6 @@
 #include <limits>
 #include <string>
 #include <cmath>
-//using namespace std;
 
 /* -----------------------------------------------------------------------------
  * User defined functions
