@@ -9,6 +9,8 @@ A calculator capable of doing various operations beyond the basic five (addition
 To build this, just compile the contents of `src/`.
 For this, you'll need `libc` (comes with `base-devel`) and a C/C++ compiler of your choice.
 
+### Installing `libc` and Compiler of Choice
+
 For Debian/Ubuntu users wanting to build, you'll need:
 ```
 sudo apt-get base-devel gcc clang
@@ -35,6 +37,20 @@ For Windows users that are using MSYS2 that want to build, you'll need:
 ```
 pacman -S base-devel gcc clang
 ```
+
+### Compiling
+
+For GCC:
+```
+g++ "src/main.cpp" -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
+```
+
+For Clang:
+```
+clang++ "src/main.cpp" -o YOUR_TEST_OR_INSTALL_LOCATION_HERE
+```
+
+Replace `YOUR_TEST_OR_INSTALL_LOCATION_HERE` with path and name of your output file.
 
 ## To-do
 
