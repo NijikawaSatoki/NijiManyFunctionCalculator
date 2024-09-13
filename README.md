@@ -54,7 +54,7 @@ Replace `YOUR_TEST_OR_INSTALL_LOCATION_HERE` with path and name of your output f
 
 ## To-do
 
-- [ ] Documentation
+- [ ] Documentation **(Status: in progress)**
 - [ ] Move functions to their own file and header (hopefully).
 - [ ] Add arc* operations (`acos(x)` "arccosine", `asin(x)` "arcsine", `atan(x)` "arctangent").
 - [ ] Add hyperbolic operations (`cosh(x)` "hyperbolic cosine", `sinh(x)` "hyperbolic sine", `tanh(x)` "hyperbolic tangent", `acosh(x)` "hyperbolic arccosine", `asinh(x)` "hyperbolic arcsine", `atanh` "hyperbolic arctangent").
