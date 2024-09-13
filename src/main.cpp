@@ -242,7 +242,7 @@ void Niji_square() {
  */
 
 int main() {
-    cout << "\t\t" << "\"Niji's Many Function Calculator\"" << "\n\n"; // Title line
+    cout << "\t\t" << "\"Niji's Many Function Calculator\"" << endl; // Title line
     cout << "\t" << "Made by Satoki Nijikawa and Wamo, of Niji System" << "\n\n"; // Author
     char response; // T_T
     do {
