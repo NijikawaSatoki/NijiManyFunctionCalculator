@@ -16,7 +16,7 @@
 #include <limits>
 #include <string>
 #include <cmath>
-using namespace std;
+//using namespace std;
 
 /* -----------------------------------------------------------------------------
  * User defined functions
@@ -28,15 +28,15 @@ using namespace std;
 void Niji_addition() {
     int x, y;
     int sum;
-    cout << "Addition takes two numbers and adds them together." << endl;
+    std::cout << "Addition takes two numbers and adds them together." << std::endl;
     // Ask for the numbers
-    cout << "Please enter a number: ";
-    cin >> x;
-    cout << "Please enter another number: ";
-    cin >> y;
+    std::cout << "Please enter a number: ";
+    std::cin >> x;
+    std::cout << "Please enter another number: ";
+    std::cin >> y;
     // Add the numbers together
     sum = x + y;
-    cout << x << " plus " << y << " is " << sum << "." << endl;
+    std::cout << x << " plus " << y << " is " << sum << "." << std::endl;
 }
 
 /* Subtraction
@@ -44,15 +44,15 @@ void Niji_addition() {
 void Niji_subtraction() {
     int x, y;
     signed int difference;
-    cout << "Subtraction takes a number and subtracts another number from it." << endl;
+    std::cout << "Subtraction takes a number and subtracts another number from it." << std::endl;
     // Ask for the numbers
-    cout << "Please enter a number: ";
-    cin >> x;
-    cout << "Please enter another number: ";
-    cin >> y;
+    std::cout << "Please enter a number: ";
+    std::cin >> x;
+    std::cout << "Please enter another number: ";
+    std::cin >> y;
     // Subtract the first number from the second
     difference = x - y;
-    cout << x << " minus " << y << " is " << difference << "." << endl;
+    std::cout << x << " minus " << y << " is " << difference << "." << std::endl;
 }
 
 /* Multiplication
@@ -60,15 +60,15 @@ void Niji_subtraction() {
 void Niji_multiplication() {
     int x, y;
     int product;
-    cout << "Multiplication takes two numbers and multiplies them." << endl;
+    std::cout << "Multiplication takes two numbers and multiplies them." << std::endl;
     // Ask for the numbers
-    cout << "Please enter a number: ";
-    cin >> x;
-    cout << "Please enter another number: ";
-    cin >> y;
+    std::cout << "Please enter a number: ";
+    std::cin >> x;
+    std::cout << "Please enter another number: ";
+    std::cin >> y;
     // Multiplies the two numbers together
     product = x * y;
-    cout << x << " times " << y << " is " << product << "." << endl;
+    std::cout << x << " times " << y << " is " << product << "." << std::endl;
 }
 
 /* Division
@@ -76,19 +76,19 @@ void Niji_multiplication() {
 void Niji_division() {
     double x, y;
     double quotient;
-    cout << "Division takes a number and divides it by another number." << endl;
+    std::cout << "Division takes a number and divides it by another number." << std::endl;
     // Ask for the numbers
-    cout << "Please enter the number you want to divide: ";
-    cin >> x;
-    cout << "Please enter the number to divide the previous one by: ";
-    cin >> y;
+    std::cout << "Please enter the number you want to divide: ";
+    std::cin >> x;
+    std::cout << "Please enter the number to divide the previous one by: ";
+    std::cin >> y;
     // Check if the user is trying to divide by 0
     if (y == 0) {
-        cout << "Fool and knave, you can't divide by 0!" << endl;
+        std::cout << "Fool and knave, you can't divide by 0!" << std::endl;
     } else if (y != 0) {
         // Divides x by y
         quotient = x / y;
-        cout << x << " divided by " << y << " is " << quotient << "." << endl;
+        std::cout << x << " divided by " << y << " is " << quotient << "." << std::endl;
     }
 }
 
@@ -97,19 +97,19 @@ void Niji_division() {
 void Niji_modulus() {
     int x, y;
     int remainder;
-    cout << "Modulus does division, and then takes the remainder." << endl;
+    std::cout << "Modulus does division, and then takes the remainder." << std::endl;
     // Ask for the numbers
-    cout << "Please enter the number you want to divide: ";
-    cin >> x;
-    cout << "Please enter the number to divide the previous one by: ";
-    cin >> y;
+    std::cout << "Please enter the number you want to divide: ";
+    std::cin >> x;
+    std::cout << "Please enter the number to divide the previous one by: ";
+    std::cin >> y;
     // Check if the user is trying to divide by 0
     if (y == 0) {
-        cout << "Fool and knave, you can't divide by 0!" << endl;
+        std::cout << "Fool and knave, you can't divide by 0!" << std::endl;
     } else if (y != 0) {
         // Performs the modulus
         remainder = x % y;
-        cout << x << " divided by " << y << " gives a remainder of " << remainder << "." << endl;
+        std::cout << x << " divided by " << y << " gives a remainder of " << remainder << "." << std::endl;
     }
 }
 
@@ -118,15 +118,15 @@ void Niji_modulus() {
 void Niji_exponent() {
     int base, exponent;
     int exponentResult;
-    cout << "Exponents (powers) raise a number to the nth power" << endl;
+    std::cout << "Exponents (powers) raise a number to the nth power" << std::endl;
     // Ask for the numbers
-    cout << "Please enter the base: ";
-    cin >> base;
-    cout << "Please enter the exponent: ";
-    cin >> exponent;
+    std::cout << "Please enter the base: ";
+    std::cin >> base;
+    std::cout << "Please enter the exponent: ";
+    std::cin >> exponent;
     // Does the exponent thing
     exponentResult = pow(base,exponent);
-    cout << base << " raised to the power of " << exponent << " is " << exponentResult << "." << endl;
+    std::cout << base << " raised to the power of " << exponent << " is " << exponentResult << "." << std::endl;
 }
 
 /* Trigonometric cosine
@@ -135,15 +135,15 @@ void Niji_cosine() {
     const double PI = 3.1415926535898;
     int angleTheta_degrees;
     long double cosine;
-    cout << "*sigh* How do I even explain cosine...?" << endl;
+    std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
     // Ask for angle θ
-    cout << "What is your angle θ (theta), in degrees? ";
-    cin >> angleTheta_degrees;
+    std::cout << "What is your angle θ (theta), in degrees? ";
+    std::cin >> angleTheta_degrees;
     // Calculate the cosine of angle θ
     long double angleTheta_radians;
     angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
     cosine = cos(angleTheta_radians);
-    cout << "The cosine of angle θ being " << angleTheta_degrees << "° is " << cosine << "." << endl;
+    std::cout << "The cosine of angle θ being " << angleTheta_degrees << "° is " << cosine << "." << std::endl;
 }
 
 /* Trigonometric sine
@@ -152,15 +152,15 @@ void Niji_sine() {
     const double PI = 3.1415926535898;
     int angleTheta_degrees;
     long double sine;
-    cout << "*sigh* How do I even explain sine...?" << endl;
+    std::cout << "*sigh* How do I even explain sine...?" << std::endl;
     // Ask for angle θ
-    cout << "What is your angle θ (theta), in degrees? ";
-    cin >> angleTheta_degrees;
+    std::cout << "What is your angle θ (theta), in degrees? ";
+    std::cin >> angleTheta_degrees;
     // Calculate the sine of angle θ
     long double angleTheta_radians;
     angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
     sine = sin(angleTheta_radians);
-    cout << "The sine of angle θ being " << angleTheta_degrees << "° is " << sine << "." << endl;
+    std::cout << "The sine of angle θ being " << angleTheta_degrees << "° is " << sine << "." << std::endl;
 }
 
 /* Trigonometric tangent
@@ -169,15 +169,15 @@ void Niji_tangent() {
     const double PI = 3.1415926535898;
     int angleTheta_degrees;
     long double tangent;
-    cout << "*sigh* How do I even explain tangent...?" << endl;
+    std::cout << "*sigh* How do I even explain tangent...?" << std::endl;
     // Ask for angle θ
-    cout << "What is your angle θ (theta), in degrees? ";
-    cin >> angleTheta_degrees;
+    std::cout << "What is your angle θ (theta), in degrees? ";
+    std::cin >> angleTheta_degrees;
     // Calculate the tangent of angle θ
     long double angleTheta_radians;
     angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
     tangent = tan(angleTheta_radians);
-    cout << "The tangent of angle θ being " << angleTheta_degrees << "° is " << tangent << "." << endl;
+    std::cout << "The tangent of angle θ being " << angleTheta_degrees << "° is " << tangent << "." << std::endl;
 }
 
 /* Square root / √x
@@ -185,13 +185,13 @@ void Niji_tangent() {
 void Niji_squareRoot() {
     int square;
     long double squareRoot;
-    cout << "Square root is the inverse of square (that is, a number raised to the power of 2)" << endl;
+    std::cout << "Square root is the inverse of square (that is, a number raised to the power of 2)" << std::endl;
     // Ask for the square
-    cout << "Please enter the square that you want the root of: ";
-    cin >> square;
+    std::cout << "Please enter the square that you want the root of: ";
+    std::cin >> square;
     // Calculates the square root
     squareRoot = sqrt(square);
-    cout << "The square root of " << square << " (√" << square << ") is " << squareRoot << "." << endl;
+    std::cout << "The square root of " << square << " (√" << square << ") is " << squareRoot << "." << std::endl;
 }
 
 /* Cube root / ∛x
@@ -199,13 +199,13 @@ void Niji_squareRoot() {
 void Niji_cubeRoot() {
     int cube;
     long double cubeRoot;
-    cout << "Cube root is the inverse of cube (that is, a number raised to the power of 3)" << endl;
+    std::cout << "Cube root is the inverse of cube (that is, a number raised to the power of 3)" << std::endl;
     // Ask for the cube
-    cout << "Please enter the cube that you want the root of: ";
-    cin >> cube;
+    std::cout << "Please enter the cube that you want the root of: ";
+    std::cin >> cube;
     // Calculates the cube root
     cubeRoot = cbrt(cube);
-    cout << "The cube root of " << cube << " (∛" << cube << ") is " << cubeRoot << "." << endl;
+    std::cout << "The cube root of " << cube << " (∛" << cube << ") is " << cubeRoot << "." << std::endl;
 }
 
 /* Square / x²
@@ -213,27 +213,27 @@ void Niji_cubeRoot() {
 void Niji_square() {
     int base;
     int square;
-    cout << "Squaring is, at its most basic, multiplying a number by itself, i.e. 2*2. Squaring is often expressed as an exponent, x²." << endl;
+    std::cout << "Squaring is, at its most basic, multiplying a number by itself, i.e. 2*2. Squaring is often expressed as an exponent, x²." << std::endl;
     // Ask for the number to be squared
-    cout << "What do you want the square of? ";
-    cin >> base;
+    std::cout << "What do you want the square of? ";
+    std::cin >> base;
     // Calculates the square
     square = pow(base,2);
-    cout << "The square of " << base << " (" << base << "²) is " << square << "." << endl;
+    std::cout << "The square of " << base << " (" << base << "²) is " << square << "." << std::endl;
 }
 
-/* Square / x²
+/* Cube / x³
  * Function author: Wamo (Niji System) */
-void Niji_square() {
+void Niji_cube() {
     int base;
-    int square;
-    cout << "Squaring is, at its most basic, multiplying a number by itself, i.e. 2*2. Squaring is often expressed as an exponent, x²." << endl;
-    // Ask for the number to be squared
-    cout << "What do you want the square of? ";
-    cin >> base;
-    // Calculates the square
-    square = pow(base,2);
-    cout << "The square of " << base << " (" << base << "²) is " << square << "." << endl;
+    int cube;
+    std::cout << "Cubing is, at its most basic, multiplying a number by itself three (3) times, i.e. 2*2*2. Cubing is often expressed as an exponent, x³." << std::endl;
+    // Ask for the number to be cubed
+    std::cout << "What do you want the cube of? ";
+    std::cin >> base;
+    // Calculates the cube
+    cube = pow(base,3);
+    std::cout << "The cube of " << base << " (" << base << "³) is " << cube << "." << std::endl;
 }
 
 /* -----------------------------------------------------------------------------
@@ -242,22 +242,22 @@ void Niji_square() {
  */
 
 int main() {
-    cout << "\t\t" << "\"Niji's Many Function Calculator\"" << endl; // Title line
-    cout << "\t" << "Made by Satoki Nijikawa and Wamo, of Niji System" << "\n\n"; // Author
+    std::cout << "\t\t" << "\"Niji's Many Function Calculator\"" << std::endl; // Title line
+    std::cout << "\t" << "Made by Satoki Nijikawa and Wamo, of Niji System" << "\n\n"; // Author
     char response; // T_T
     do {
-        string operation = "";
+        std::string operation = "";
         // Ask the user what operation they wish to perform
-        cout << "Please state the operation you wish to perform." << endl;
+        std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
-        cout << "Currently implemented:" << endl;
-        cout << "addition" << "\t" << "subtraction" << "\t" << "multiplication" << "\t" << "division" << "\t" << "modulus" << endl;
-        cout << "exponent" << "\t" << "cosine" << "\t\t" << "sine" << "\t\t" << "tangent" << "\t\t" << "square-root" << endl;
-        cout << "cube-root" << "\t" << "square" << "\t\t" << "cube" << endl;
-        cout << "'exit' closes the program." << endl;
+        std::cout << "Currently implemented:" << std::endl;
+        std::cout << "addition" << "\t" << "subtraction" << "\t" << "multiplication" << "\t" << "division" << "\t" << "modulus" << std::endl;
+        std::cout << "exponent" << "\t" << "cosine" << "\t\t" << "sine" << "\t\t" << "tangent" << "\t\t" << "square-root" << std::endl;
+        std::cout << "cube-root" << "\t" << "square" << "\t\t" << "cube" << std::endl;
+        std::cout << "'exit' closes the program." << std::endl;
         // User inputs what they want
-        cout << "Which will it be? (Please enter your selection entirely in lowercase): ";
-        getline(cin, operation);
+        std::cout << "Which will it be? (Please enter your selection entirely in lowercase): ";
+        getline(std::cin, operation);
         /* Checks against user input and executes desired operation (or lack of).
          * This is about to get messy D: */
         if (operation == "addition" || operation == "Addition" || operation == "ADDITION") {
@@ -300,20 +300,20 @@ int main() {
             // Cube
             Niji_cube();
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
-            cout << "Oh." << endl;
+            std::cout << "Oh." << std::endl;
             return 0;
         } else if (operation == "") {
             // No input (user hits RETURN)
-            cout << "You didn't say what operation you wanted. Like, you do know that I'm *not* a mind reader, right?" << endl;
+            std::cout << "You didn't say what operation you wanted. Like, you do know that I'm *not* a mind reader, right?" << std::endl;
         } else {
             // User inputted nonsense
-            cout << "Not a valid operation!!" << endl;
+            std::cout << "Not a valid operation!!" << std::endl;
         }
-        cout << "Would you like to perform another operation? [Y/n] ";
-        cin >> response;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clears out the input stream
+        std::cout << "Would you like to perform another operation? [Y/n] ";
+        std::cin >> response;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clears out the input stream
     } while (response == 'Y' || response == 'y');
-    cout << "Have a nice day.";
-    cout << endl;
+    std::cout << "Have a nice day.";
+    std::cout << std::endl;
     return 0;
 }
