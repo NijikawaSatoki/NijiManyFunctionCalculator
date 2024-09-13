@@ -1,4 +1,4 @@
-# NijiManyFunctionCalculator
+# Niji's Many Function Calculator
 
 ## About
 
