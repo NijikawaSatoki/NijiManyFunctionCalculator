@@ -23,7 +23,7 @@ cube-root	square		cube
 Which will it be? (Please enter your selection entirely in lowercase): 
 ```
 
-This appears when you first start the program.
+This appears when you start the program.
 The title and author are on the first two lines.
 
 Next is the list of the currently implemented operations.
