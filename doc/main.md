@@ -40,9 +40,9 @@ Also great for convert fractions to decimals. \
 `modulus`: Like division, but for when you want the remainder. \
 `exponent`: When you want to raise a number *x* to the nth power. \
 `cosine`: When you want to get the cosine of an angle θ. \
-`sine`: When you want to get the sine of an angle θ.
+`sine`: When you want to get the sine of an angle θ. \
 `tangent`: When you want to get the tangent of an angle θ. \
 `square-root`: When you want to take the square root of a number. \
 `cube-root`: When you want to take the cube root of a number. \
-`square`: When you want to raise a number *x* to the power of 2.
+`square`: When you want to raise a number *x* to the power of 2. \
 `cube`: When you want to raise a number *x* to the power of 3.
