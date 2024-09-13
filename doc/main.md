@@ -4,7 +4,7 @@ Note: This will not have build instructions.
 Please see the project's `README.md` for those instructions.
 
 While this is yet another calculator, it has plenty of functionality.
-It is a CLI application, so a terminal shell such as `cmd.exe` (Windows) or your distro's terminal (Linux).
+It is a CLI application, so a terminal shell such as `cmd.exe` (Windows) or your distro's terminal (Linux) is required.
 
 This will attempt to aid in the comprehension of the program's functionality.
 
