@@ -2,8 +2,8 @@
  * main.cpp
  * =============================================================================
  * 
- * Author: Niji System - Satoki Nijikawa
- *                       Wamo
+ * Author: Niji System - Satoki Nijikawa / 虹川郷鬼
+ *                       Wamo            / ワーモ
  * 
  */
 
