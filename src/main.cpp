@@ -12,10 +12,21 @@
  * -----------------------------------------------------------------------------
  */
 
+// Header libraries
 #include <iostream>
 #include <limits>
 #include <string>
 #include <cmath>
+
+// User defined headers
+
+// Establishes usage of `std' namespace
+using namespace std;
+
+/* -----------------------------------------------------------------------------
+ * User defined classes
+ * -----------------------------------------------------------------------------
+ */
 
 /* -----------------------------------------------------------------------------
  * User defined functions
