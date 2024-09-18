@@ -19,6 +19,7 @@
 #include <cmath>
 
 // User defined headers
+#include 'header/niji_math.h'
 
 // Establishes usage of `std' namespace
 using namespace std;
