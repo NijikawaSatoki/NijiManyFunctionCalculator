@@ -14,4 +14,4 @@ class NijiMath {
         void Niji_cubeRoot();
         void Niji_square();
         void Niji_cube();
-}
+};
