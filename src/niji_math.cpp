@@ -122,7 +122,7 @@ void NijiMath::Niji_modulus() {
 /* Trigonometric cosine
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMath::Niji_cosine() {
-    const double PI = 3.1415926535898;
+    const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double cosine;
     std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
@@ -139,7 +139,7 @@ void NijiMath::Niji_cosine() {
 /* Trigonometric sine
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMath::Niji_sine() {
-    const double PI = 3.1415926535898;
+    const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double sine;
     std::cout << "*sigh* How do I even explain sine...?" << std::endl;
@@ -156,7 +156,7 @@ void NijiMath::Niji_sine() {
 /* Trigonometric tangent
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMath::Niji_tangent() {
-    const double PI = 3.1415926535898;
+    const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double tangent;
     std::cout << "*sigh* How do I even explain tangent...?" << std::endl;
