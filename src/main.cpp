@@ -49,9 +49,10 @@ int main() {
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
         std::cout << "Currently implemented:" << std::endl;
-        std::cout << "addition" << "\t" << "subtraction" << "\t" << "multiplication" << "\t" << "division" << "\t" << "modulus" << std::endl;
-        std::cout << "exponent" << "\t" << "cosine" << "\t\t" << "sine" << "\t\t" << "tangent" << "\t\t" << "square-root" << std::endl;
-        std::cout << "cube-root" << "\t" << "square" << "\t\t" << "cube" << std::endl;
+        std::cout << "addition" << "\t" << "subtraction" << "\t" << "multiplication" << "\t" << "division" << std::endl;
+        std::cout << "modulus" << "\t\t" << "exponent" << "\t" << "cosine" << "\t\t" << "sine" << std::endl;
+        std::cout << "tangent" << "\t\t" << "square-root" << "\t" << "cube-root" << "\t" << "square" << std::endl;
+        std::cout << "cube" << std::endl;
         std::cout << "'exit' closes the program." << std::endl;
         // User inputs what they want
         std::cout << "Which will it be? (Please enter your selection entirely in lowercase): ";
