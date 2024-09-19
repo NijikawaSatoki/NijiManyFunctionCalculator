@@ -41,3 +41,12 @@ Please enter another number: 25
 
 Please note that adding decimals is currently not supported at this time.
 So please enter **whole numbers only**.
+
+When you see the below prompt
+
+```
+Would you like to perform another operation? [Y/n] 
+```
+
+Giving an input of 'y' (reagrdless of case) takes you back to the main menu.
+Any other character exits the calculator.
