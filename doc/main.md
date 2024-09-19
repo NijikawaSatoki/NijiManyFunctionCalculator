@@ -16,9 +16,10 @@ This will attempt to aid in the comprehension of the program's functionality.
 
 Please state the operation that you wish to perform.
 Currently implemented:
-addition	subtraction	multiplication	division	modulus
-exponent	cosine		sine		tangent		square-root
-cube-root	square		cube
+addition	subtraction	multiplication	division
+modulus		exponent	cosine		sine
+tangent		square-root	cube-root	square
+cube
 'exit' closes the program.
 Which will it be? (Please enter your selection entirely in lowercase): 
 ```
