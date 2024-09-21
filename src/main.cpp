@@ -40,18 +40,23 @@ using namespace std;
  */
 
 int main() {
-    std::cout << "\t\t" << "\"Niji's Many Function Calculator\"" << std::endl; // Title line
-    std::cout << "\t" << "Made by Satoki Nijikawa and Wamo, of Niji System" << "\n\n"; // Author
+    // Establish some variables
     char response; // T_T
+    std::string singleTab = "\t";
+    std::string doubleTab = "\t\t";
+    std::string blankLine = "\n\n";
+    // Main stuff
+    std::cout << doubleTab << "\"Niji's Many Function Calculator\"" << std::endl; // Title line
+    std::cout << singleTab << "Made by Satoki Nijikawa and Wamo, of Niji System" << blankLine; // Author
     do {
         std::string operation = "";
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
         std::cout << "Currently implemented:" << std::endl;
-        std::cout << "addition" << "\t" << "subtraction" << "\t" << "multiplication" << "\t" << "division" << std::endl;
-        std::cout << "modulus" << "\t\t" << "exponent" << "\t" << "cosine" << "\t\t" << "sine" << std::endl;
-        std::cout << "tangent" << "\t\t" << "square-root" << "\t" << "cube-root" << "\t" << "square" << std::endl;
+        std::cout << "addition" << singleTab << "subtraction" << singleTab << "multiplication" << singleTab << "division" << std::endl;
+        std::cout << "modulus" << doubleTab << "exponent" << singleTab << "cosine" << doubleTab << "sine" << std::endl;
+        std::cout << "tangent" << doubleTab << "square-root" << singleTab << "cube-root" << singleTab << "square" << std::endl;
         std::cout << "cube" << std::endl;
         std::cout << "'exit' closes the program." << std::endl;
         // User inputs what they want
