@@ -48,7 +48,7 @@ int main() {
         std::cout << "modulus" << doubleTab << "exponent" << singleTab << "cosine" << doubleTab << "sine" << std::endl;
         std::cout << "tangent" << doubleTab << "square-root" << singleTab << "cube-root" << singleTab << "square" << std::endl;
         std::cout << "cube" << std::endl;
-        std::cout << "'exit' closes the program." << std::endl;
+        std::cout << "`exit' closes the program." << std::endl;
         // User inputs what they want
         std::cout << "Which will it be? (Please enter your selection entirely in lowercase): ";
         getline(std::cin, operation);
