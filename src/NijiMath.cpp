@@ -139,19 +139,28 @@ void NijiMath::Niji_division() {
 void NijiMath::Niji_modulus() {
     int x, y;
     int remainder;
-    std::cout << "Modulus does division, and then takes the remainder." << std::endl;
-    // Ask for the numbers
-    std::cout << "Please enter the number you want to divide: ";
-    std::cin >> x;
-    std::cout << "Please enter the number to divide the previous one by: ";
-    std::cin >> y;
-    // Check if the user is trying to divide by 0
-    if (y == 0) {
-        std::cout << "Fool and knave, you can't divide by 0!" << std::endl;
-    } else if (y != 0) {
-        // Performs the modulus
-        remainder = x % y;
-        std::cout << x << " divided by " << y << " gives a remainder of " << remainder << "." << std::endl;
+    char confirmation;
+    do {
+        std::cout << "Modulus does division, and then takes the remainder." << std::endl;
+        // Ask for the numbers
+        std::cout << "Please enter the number you want to divide: ";
+        std::cin >> x;
+        std::cout << "Please enter the number to divide the previous one by: ";
+        std::cin >> y;
+        // Confirm the user's desire
+        std::cout << "So you want to divide " << x << " by " << y << "and take the remainder." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Check if the user is trying to divide by 0
+        if (y == 0) {
+            std::cout << "Fool and knave, you can't divide by 0!" << std::endl;
+        } else if (y != 0) {
+            // Performs the modulus
+            remainder = x % y;
+            std::cout << x << " divided by " << y << " gives a remainder of " << remainder << "." << std::endl;
+        }
     }
 }
 
