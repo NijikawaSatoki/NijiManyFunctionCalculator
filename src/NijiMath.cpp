@@ -84,15 +84,24 @@ void NijiMath::Niji_subtraction() {
 void NijiMath::Niji_multiplication() {
     int x, y;
     int product;
-    std::cout << "Multiplication takes two numbers and multiplies them." << std::endl;
-    // Ask for the numbers
-    std::cout << "Please enter a number: ";
-    std::cin >> x;
-    std::cout << "Please enter another number: ";
-    std::cin >> y;
-    // Multiplies the two numbers together
-    product = x * y;
-    std::cout << x << " times " << y << " is " << product << "." << std::endl;
+    char confirmation;
+    do {
+        std::cout << "Multiplication takes two numbers and multiplies them." << std::endl;
+        // Ask for the numbers
+        std::cout << "Please enter a number: ";
+        std::cin >> x;
+        std::cout << "Please enter another number: ";
+        std::cin >> y;
+        // Confirm the user's desire
+        std::cout << "So you want to multiply " << x << " by " << y << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Multiplies the two numbers together
+        product = x * y;
+        std::cout << x << " times " << y << " is " << product << "." << std::endl;
+    }
 }
 
 /* Division
