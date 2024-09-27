@@ -47,7 +47,7 @@ void NijiMath::Niji_addition() {
         std::cout << "Is this correct? [Y/n] ";
         std::cin >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
-    if (confirmation == 'Y' || confirmation == 'y') {
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Add the numbers together
         sum = x + y;
         std::cout << x << " plus " << y << " is " << sum << "." << std::endl;
@@ -72,7 +72,7 @@ void NijiMath::Niji_subtraction() {
         std::cout << "Is this correct? [Y/n] ";
         std::cin >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
-    if (confirmation == 'Y' || confirmation == 'y') {
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Subtract the first number from the second
         difference = x - y;
         std::cout << x << " minus " << y << " is " << difference << "." << std::endl;
