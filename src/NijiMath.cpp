@@ -249,15 +249,23 @@ void NijiMath::Niji_tangent() {
 void NijiMath::Niji_exponent() {
     int base, exponent;
     int exponentResult;
+    char confirmation;
     std::cout << "Exponents (powers) raise a number to the nth power" << std::endl;
-    // Ask for the numbers
-    std::cout << "Please enter the base: ";
-    std::cin >> base;
-    std::cout << "Please enter the exponent: ";
-    std::cin >> exponent;
-    // Does the exponent thing
-    exponentResult = pow(base,exponent);
-    std::cout << base << " raised to the power of " << exponent << " is " << exponentResult << "." << std::endl;
+    do {
+        // Ask for the numbers
+        std::cout << "Please enter the base: ";
+        std::cin >> base;
+        std::cout << "Please enter the exponent: ";
+        std::cin >> exponent;
+        std::cout << "So you want the answer to " << base << " raised to the power of " << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Does the exponent thing
+        exponentResult = pow(base,exponent);
+        std::cout << base << " raised to the power of " << exponent << " is " << exponentResult << "." << std::endl;
+    }
 }
 
 /* Square root / √x
