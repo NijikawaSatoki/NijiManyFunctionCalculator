@@ -35,8 +35,8 @@ void NijiMath::Niji_addition() {
     int x, y;
     int sum;
     char confirmation;
+    std::cout << "Addition takes two numbers and adds them together." << std::endl;
     do {
-        std::cout << "Addition takes two numbers and adds them together." << std::endl;
         // Ask for the numbers
         std::cout << "Please enter a number: ";
         std::cin >> x;
@@ -60,8 +60,8 @@ void NijiMath::Niji_subtraction() {
     int x, y;
     signed int difference;
     char confirmation;
+    std::cout << "Subtraction takes a number and subtracts another number from it." << std::endl;
     do {
-        std::cout << "Subtraction takes a number and subtracts another number from it." << std::endl;
         // Ask for the numbers
         std::cout << "Please enter a number: ";
         std::cin >> x;
@@ -85,8 +85,8 @@ void NijiMath::Niji_multiplication() {
     int x, y;
     int product;
     char confirmation;
+    std::cout << "Multiplication takes two numbers and multiplies them." << std::endl;
     do {
-        std::cout << "Multiplication takes two numbers and multiplies them." << std::endl;
         // Ask for the numbers
         std::cout << "Please enter a number: ";
         std::cin >> x;
@@ -110,8 +110,8 @@ void NijiMath::Niji_division() {
     double x, y;
     double quotient;
     char confirmation;
+    std::cout << "Division takes a number and divides it by another number." << std::endl;
     do {
-        std::cout << "Division takes a number and divides it by another number." << std::endl;
         // Ask for the numbers
         std::cout << "Please enter the number you want to divide: ";
         std::cin >> x;
@@ -140,8 +140,8 @@ void NijiMath::Niji_modulus() {
     int x, y;
     int remainder;
     char confirmation;
+    std::cout << "Modulus does division, and then takes the remainder." << std::endl;
     do {
-        std::cout << "Modulus does division, and then takes the remainder." << std::endl;
         // Ask for the numbers
         std::cout << "Please enter the number you want to divide: ";
         std::cin >> x;
@@ -171,8 +171,8 @@ void NijiMath::Niji_cosine() {
     int angleTheta_degrees;
     long double cosine;
     char confirmation;
+    std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
     do {
-        std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
         // Ask for angle θ
         std::cout << "What is your angle θ (theta), in degrees? ";
         std::cin >> angleTheta_degrees;
