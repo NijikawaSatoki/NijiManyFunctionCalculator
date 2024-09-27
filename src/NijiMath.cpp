@@ -34,15 +34,24 @@ using namespace std;
 void NijiMath::Niji_addition() {
     int x, y;
     int sum;
-    std::cout << "Addition takes two numbers and adds them together." << std::endl;
-    // Ask for the numbers
-    std::cout << "Please enter a number: ";
-    std::cin >> x;
-    std::cout << "Please enter another number: ";
-    std::cin >> y;
-    // Add the numbers together
-    sum = x + y;
-    std::cout << x << " plus " << y << " is " << sum << "." << std::endl;
+    char confirmation;
+    do {
+        std::cout << "Addition takes two numbers and adds them together." << std::endl;
+        // Ask for the numbers
+        std::cout << "Please enter a number: ";
+        std::cin >> x;
+        std::cout << "Please enter another number: ";
+        std::cin >> y;
+        // Confirm the user's desire
+        std::cout << "So you want to add " << x << " and " << y << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') {
+        // Add the numbers together
+        sum = x + y;
+        std::cout << x << " plus " << y << " is " << sum << "." << std::endl;
+    }
 }
 
 /* Subtraction
