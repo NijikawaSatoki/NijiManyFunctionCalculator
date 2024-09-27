@@ -195,15 +195,23 @@ void NijiMath::Niji_sine() {
     const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double sine;
+    char confirmation;
     std::cout << "*sigh* How do I even explain sine...?" << std::endl;
-    // Ask for angle θ
-    std::cout << "What is your angle θ (theta), in degrees? ";
-    std::cin >> angleTheta_degrees;
-    // Calculate the sine of angle θ
-    long double angleTheta_radians;
-    angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
-    sine = sin(angleTheta_radians);
-    std::cout << "The sine of angle θ being " << angleTheta_degrees << "° is " << sine << "." << std::endl;
+    do {
+        // Ask for angle θ
+        std::cout << "What is your angle θ (theta), in degrees? ";
+        std::cin >> angleTheta_degrees;
+        std::cout << "So you want the sine of a " << angleTheta_degrees << "° angle." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Calculate the sine of angle θ
+        long double angleTheta_radians;
+        angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
+        sine = sin(angleTheta_radians);
+        std::cout << "The sine of angle θ being " << angleTheta_degrees << "° is " << sine << "." << std::endl;
+    }
 }
 
 /* Trigonometric tangent
