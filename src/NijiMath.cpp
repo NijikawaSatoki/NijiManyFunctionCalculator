@@ -220,15 +220,23 @@ void NijiMath::Niji_tangent() {
     const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double tangent;
+    char confirmation;
     std::cout << "*sigh* How do I even explain tangent...?" << std::endl;
-    // Ask for angle θ
-    std::cout << "What is your angle θ (theta), in degrees? ";
-    std::cin >> angleTheta_degrees;
-    // Calculate the tangent of angle θ
-    long double angleTheta_radians;
-    angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
-    tangent = tan(angleTheta_radians);
-    std::cout << "The tangent of angle θ being " << angleTheta_degrees << "° is " << tangent << "." << std::endl;
+    do {
+        // Ask for angle θ
+        std::cout << "What is your angle θ (theta), in degrees? ";
+        std::cin >> angleTheta_degrees;
+        std::cout << "So you want the tangent of a " << angleTheta_degrees << "° angle." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Calculate the tangent of angle θ
+        long double angleTheta_radians;
+        angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
+        tangent = tan(angleTheta_radians);
+        std::cout << "The tangent of angle θ being " << angleTheta_degrees << "° is " << tangent << "." << std::endl;
+    }
 }
 
 /* -----------------------------------------------------------------------------
