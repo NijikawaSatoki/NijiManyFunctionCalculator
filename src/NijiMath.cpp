@@ -339,11 +339,19 @@ void NijiMath::Niji_square() {
 void NijiMath::Niji_cube() {
     int base;
     int cube;
+    char confirmation;
     std::cout << "Cubing is, at its most basic, multiplying a number by itself three (3) times, i.e. 2*2*2. Cubing is often expressed as an exponent, x³." << std::endl;
-    // Ask for the number to be cubed
-    std::cout << "What do you want the cube of? ";
-    std::cin >> base;
-    // Calculates the cube
-    cube = pow(base,3);
-    std::cout << "The cube of " << base << " (" << base << "³) is " << cube << "." << std::endl;
+    do {
+        // Ask for the number to be cubed
+        std::cout << "What do you want the cube of? ";
+        std::cin >> base;
+        std::cout << "So you want the cube of " << base << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Calculates the cube
+        cube = pow(base,3);
+        std::cout << "The cube of " << base << " (" << base << "³) is " << cube << "." << std::endl;
+    }
 }
