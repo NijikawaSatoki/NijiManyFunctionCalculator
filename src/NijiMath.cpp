@@ -170,15 +170,23 @@ void NijiMath::Niji_cosine() {
     const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double cosine;
-    std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
-    // Ask for angle θ
-    std::cout << "What is your angle θ (theta), in degrees? ";
-    std::cin >> angleTheta_degrees;
-    // Calculate the cosine of angle θ
-    long double angleTheta_radians;
-    angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
-    cosine = cos(angleTheta_radians);
-    std::cout << "The cosine of angle θ being " << angleTheta_degrees << "° is " << cosine << "." << std::endl;
+    char confirmation;
+    do {
+        std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
+        // Ask for angle θ
+        std::cout << "What is your angle θ (theta), in degrees? ";
+        std::cin >> angleTheta_degrees;
+        std::cout << "So you want the cosine of a " << angleTheta_degrees << "° angle." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Calculate the cosine of angle θ
+        long double angleTheta_radians;
+        angleTheta_radians = angleTheta_degrees * PI / 180.0; // Converts degrees to radians
+        cosine = cos(angleTheta_radians);
+        std::cout << "The cosine of angle θ being " << angleTheta_degrees << "° is " << cosine << "." << std::endl;
+    }
 }
 
 /* Trigonometric sine
