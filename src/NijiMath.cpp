@@ -59,15 +59,24 @@ void NijiMath::Niji_addition() {
 void NijiMath::Niji_subtraction() {
     int x, y;
     signed int difference;
-    std::cout << "Subtraction takes a number and subtracts another number from it." << std::endl;
-    // Ask for the numbers
-    std::cout << "Please enter a number: ";
-    std::cin >> x;
-    std::cout << "Please enter another number: ";
-    std::cin >> y;
-    // Subtract the first number from the second
-    difference = x - y;
-    std::cout << x << " minus " << y << " is " << difference << "." << std::endl;
+    char confirmation;
+    do {
+        std::cout << "Subtraction takes a number and subtracts another number from it." << std::endl;
+        // Ask for the numbers
+        std::cout << "Please enter a number: ";
+        std::cin >> x;
+        std::cout << "Please enter another number: ";
+        std::cin >> y;
+        // Confirm the user's desire
+        std::cout << "So you want to subtract " << y << " from " << x << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') {
+        // Subtract the first number from the second
+        difference = x - y;
+        std::cout << x << " minus " << y << " is " << difference << "." << std::endl;
+    }
 }
 
 /* Multiplication
