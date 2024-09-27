@@ -273,13 +273,21 @@ void NijiMath::Niji_exponent() {
 void NijiMath::Niji_squareRoot() {
     int square;
     long double squareRoot;
+    char confirmation;
     std::cout << "Square root is the inverse of square (that is, a number raised to the power of 2)" << std::endl;
-    // Ask for the square
-    std::cout << "Please enter the square that you want the root of: ";
-    std::cin >> square;
-    // Calculates the square root
-    squareRoot = sqrt(square);
-    std::cout << "The square root of " << square << " (√" << square << ") is " << squareRoot << "." << std::endl;
+    do {
+        // Ask for the square
+        std::cout << "Please enter the square that you want the root of: ";
+        std::cin >> square;
+        std::cout << "So you want the square root of √" << square << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Calculates the square root
+        squareRoot = sqrt(square);
+        std::cout << "The square root of " << square << " (√" << square << ") is " << squareRoot << "." << std::endl;
+    }
 }
 
 /* Cube root / ∛x
