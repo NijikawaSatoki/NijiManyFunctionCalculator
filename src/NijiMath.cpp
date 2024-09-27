@@ -317,13 +317,21 @@ void NijiMath::Niji_cubeRoot() {
 void NijiMath::Niji_square() {
     int base;
     int square;
+    char confirmation;
     std::cout << "Squaring is, at its most basic, multiplying a number by itself, i.e. 2*2. Squaring is often expressed as an exponent, x²." << std::endl;
-    // Ask for the number to be squared
-    std::cout << "What do you want the square of? ";
-    std::cin >> base;
-    // Calculates the square
-    square = pow(base,2);
-    std::cout << "The square of " << base << " (" << base << "²) is " << square << "." << std::endl;
+    do {
+        // Ask for the number to be squared
+        std::cout << "What do you want the square of? ";
+        std::cin >> base;
+        std::cout << "So you want the square of " << base << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Calculates the square
+        square = pow(base,2);
+        std::cout << "The square of " << base << " (" << base << "²) is " << square << "." << std::endl;
+    }
 }
 
 /* Cube / x³
