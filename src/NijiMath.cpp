@@ -109,19 +109,28 @@ void NijiMath::Niji_multiplication() {
 void NijiMath::Niji_division() {
     double x, y;
     double quotient;
-    std::cout << "Division takes a number and divides it by another number." << std::endl;
-    // Ask for the numbers
-    std::cout << "Please enter the number you want to divide: ";
-    std::cin >> x;
-    std::cout << "Please enter the number to divide the previous one by: ";
-    std::cin >> y;
-    // Check if the user is trying to divide by 0
-    if (y == 0) {
-        std::cout << "Fool and knave, you can't divide by 0!" << std::endl;
-    } else if (y != 0) {
-        // Divides x by y
-        quotient = x / y;
-        std::cout << x << " divided by " << y << " is " << quotient << "." << std::endl;
+    char confirmation;
+    do {
+        std::cout << "Division takes a number and divides it by another number." << std::endl;
+        // Ask for the numbers
+        std::cout << "Please enter the number you want to divide: ";
+        std::cin >> x;
+        std::cout << "Please enter the number to divide the previous one by: ";
+        std::cin >> y;
+        // Confirm the user's desire
+        std::cout << "So you want to divide " << x << " by " << y << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
+        // Check if the user is trying to divide by 0
+        if (y == 0) {
+            std::cout << "Fool and knave, you can't divide by 0!" << std::endl;
+        } else if (y != 0) {
+            // Divides x by y
+            quotient = x / y;
+            std::cout << x << " divided by " << y << " is " << quotient << "." << std::endl;
+        }
     }
 }
 
