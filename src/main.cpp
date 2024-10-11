@@ -20,6 +20,7 @@
 
 // User defined headers
 #include "header/NijiMath.h"
+#include "header/CreditsAndContributors.h"
 
 // Establishes usage of `std' namespace
 using namespace std;
@@ -48,6 +49,7 @@ int main() {
         std::cout << "modulus" << doubleTab << "exponent" << singleTab << "cosine" << doubleTab << "sine" << std::endl;
         std::cout << "tangent" << doubleTab << "square-root" << singleTab << "cube-root" << singleTab << "square" << std::endl;
         std::cout << "cube" << std::endl;
+        std::cout << "`credits' shows all contributors and closes the program." << std::endl;
         std::cout << "`exit' closes the program." << std::endl;
         // User inputs what they want
         std::cout << "Which will it be? (Please enter your selection entirely in lowercase): ";
@@ -106,6 +108,10 @@ int main() {
             // Cube
             NijiMath nijiCube;
             nijiCube.Niji_cube();
+        } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
+            CreditsAndContributors contributor;
+            contributor.credits();
+            break;
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
             std::cout << "Oh." << std::endl;
             return 0;
