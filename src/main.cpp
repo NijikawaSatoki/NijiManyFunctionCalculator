@@ -109,10 +109,12 @@ int main() {
             NijiMath nijiCube;
             nijiCube.Niji_cube();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
+            // Credits & Contributors
             CreditsAndContributors contributor;
             contributor.credits();
             break;
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
+            // Exiting
             std::cout << "Oh." << std::endl;
             return 0;
         } else if (operation == "") {
