@@ -116,7 +116,7 @@ int main() {
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
             // Exiting
             std::cout << "Oh." << std::endl;
-            return 0;
+            break;
         } else if (operation == "") {
             // No input (user hits RETURN)
             std::cout << "You didn't say what operation you wanted. Like, you do know that I'm *not* a mind reader, right?" << std::endl;
