@@ -42,7 +42,7 @@ pacman -S base-devel gcc clang
 
 For GCC:
 ```
-g++ "src/main.cpp" "src/NijiMath.cpp" "src/CreditsAndContributors.cpp" -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
+g++ src/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
 ```
 
 For Clang:
