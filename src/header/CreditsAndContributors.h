@@ -2,4 +2,4 @@
 class CreditsAndContributors {
     public:
         void credits();
-}
+};
