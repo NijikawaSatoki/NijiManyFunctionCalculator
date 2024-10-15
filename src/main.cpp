@@ -42,14 +42,21 @@ int main() {
     do {
         // Variables
         std::string operation = "";
+        // 1D arrays
+        std::string opList[] = {
+            "addition", "subtraction", "multiplication", "division",
+            "modulus",  "exponent",    "cosine",         "sine",
+            "tangent",  "square-root", "cube-root",      "square",
+            "cube"
+        };
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
         std::cout << "Currently implemented:" << std::endl;
-        std::cout << "addition" << singleTab << "subtraction" << singleTab << "multiplication" << singleTab << "division" << std::endl;
-        std::cout << "modulus" << doubleTab << "exponent" << singleTab << "cosine" << doubleTab << "sine" << std::endl;
-        std::cout << "tangent" << doubleTab << "square-root" << singleTab << "cube-root" << singleTab << "square" << std::endl;
-        std::cout << "cube" << std::endl;
+        std::cout << opList[0] << singleTab << opList[1] << singleTab << opList[2] << singleTab << opList[3] << std::endl;
+        std::cout << opList[4] << doubleTab << opList[5] << singleTab << opList[6] << doubleTab << opList[7] << std::endl;
+        std::cout << opList[8] << doubleTab << opList[9] << singleTab << opList[10] << singleTab << opList[11] << std::endl;
+        std::cout << opList[12] << std::endl;
         std::cout << "`credits' shows all contributors and closes the program." << std::endl;
         std::cout << "`exit' closes the program." << std::endl;
         // User inputs what they want
