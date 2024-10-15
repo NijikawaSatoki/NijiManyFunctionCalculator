@@ -47,7 +47,7 @@ g++ src/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
 
 For Clang:
 ```
-clang++ "src/main.cpp" "src/NijiMath.cpp" "src/CreditsAndContributors.cpp" -o YOUR_TEST_OR_INSTALL_LOCATION_HERE
+clang++ src/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE
 ```
 
 Replace `YOUR_TEST_OR_INSTALL_LOCATION_HERE` with path and name of your output file.
