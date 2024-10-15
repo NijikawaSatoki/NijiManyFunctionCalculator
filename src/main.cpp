@@ -40,6 +40,7 @@ int main() {
     std::cout << doubleTab << "\"Niji's Many Function Calculator\"" << std::endl; // Title line
     std::cout << singleTab << "Made by Satoki Nijikawa and Wamo, of Niji System" << blankLine; // Author
     do {
+        // Variables
         std::string operation = "";
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
