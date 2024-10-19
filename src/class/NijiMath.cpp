@@ -307,7 +307,7 @@ void NijiMath::nijiTangent() {
         long double angleThetaInRadians;
         angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
         tangent = tan(angleThetaInRadians);
-        std::cout << "The tangent of angle θ being " << angleThetaInDegrees << "° is " << tangent << "." << std::endl;
+        std::cout << "The tangent of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << tangent << "." << std::endl;
     }
 }
 
