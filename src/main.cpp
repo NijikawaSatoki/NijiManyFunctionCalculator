@@ -46,7 +46,7 @@ int main() {
         std::string opList[] = {
             "addition", "subtraction", "multiplication", "division",
             "modulus",  "exponent",    "cosine",         "sine",
-            "tangent",  "square-root", "cube-root",      "square",
+            "tangent",  "squareroot",  "cuberoot",       "square",
             "cube"
         };
         // Ask the user what operation they wish to perform
@@ -100,11 +100,11 @@ int main() {
             // Trigonometric tangent
             NijiMath nijiTangent;
             nijiTangent.nijiTangent();
-        } else if (operation == "square-root" || operation == "Square-root" || operation == "square-Root" || operation == "SQUARE-root" || operation == "square-ROOT" || operation == "SQUARE-ROOT" || operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
+        } else if (operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
             // Square root
             NijiMath nijiSquareRoot;
             nijiSquareRoot.nijiSquareRoot();
-        } else if (operation == "cube-root" || operation == "Cube-root" || operation == "cube-Root" || operation == "CUBE-root" || operation == "cube-ROOT" || operation == "CUBE-ROOT" || operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
+        } else if (operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
             // Cube root
             NijiMath nijiCubeRoot;
             nijiCubeRoot.nijiCubeRoot();
