@@ -44,10 +44,10 @@ int main() {
         std::string operation = "";
         // 1D arrays
         std::string opList[] = {
-            "addition", "subtraction", "multiplication", "division",
-            "modulus",  "exponent",    "cosine",         "sine",
-            "tangent",  "squareroot",  "cuberoot",       "square",
-            "cube",     "fourthroot"
+            "addition" /*0 */, "subtraction" /*1 */, "multiplication" /*2 */, "division" /*3 */,
+            "modulus"  /*4 */, "exponent"    /*5 */, "cosine"         /*6 */, "sine"     /*7 */,
+            "tangent"  /*8 */, "squareroot"  /*9 */, "cuberoot"       /*10*/, "square"   /*11*/,
+            "cube"     /*12*/, "fourthroot"  /*13*/
         };
         // Initialise the objects
         // >> NijiMath <<
