@@ -51,25 +51,9 @@ int main() {
         };
         // Initialise the objects
         // >> NijiMath <<
-        NijiMath add;
-        NijiMath subtract;
-        NijiMath multiply;
-        NijiMath divide;
-        NijiMath modulo;
-        NijiMath exponent;
-        NijiMath cosine;
-        NijiMath sine;
-        NijiMath tangent;
-        NijiMath squareRoot;
-        NijiMath cubeRoot;
-        NijiMath square;
-        NijiMath cube;
-        NijiMath fourthRoot;
+        NijiMath calculator;
         // >> NijiMisc <<
-        NijiMisc contributor;
-        NijiMisc programExit;
-        NijiMisc noInput;
-        NijiMisc nonsense;
+        NijiMisc miscellaneous;
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
@@ -87,60 +71,60 @@ int main() {
          * This is about to get messy D: */
         if (operation == "addition" || operation == "Addition" || operation == "ADDITION") {
             // Addition
-            add.addition();
+            calculator.addition();
         } else if (operation == "subtraction" || operation == "Subtraction" || operation == "SUBTRACTION") {
             // Subtraction
-            subtract.subtraction();
+            calculator.subtraction();
         } else if (operation == "multiplication" || operation == "Multiplication" || operation == "MULTIPLICATION") {
             // Multiplication
-            multiply.multiplication();
+            calculator.multiplication();
         } else if (operation == "division" || operation == "Division" || operation == "DIVISION") {
             // Division
-            divide.division();
+            calculator.division();
         } else if (operation == "modulus" || operation == "Modulus" || operation == "MODULUS") {
             // Modulus
-            modulo.modulus();
+            calculator.modulus();
         } else if (operation == "exponent" || operation == "Exponent" || operation == "EXPONENT") {
             // Powers of exponents
-            exponent.exponent();
+            calculator.exponent();
         } else if (operation == "cosine" || operation == "Cosine" || operation == "COSINE") {
             // Trigonometric cosine
-            cosine.cosine();
+            calculator.cosine();
         } else if (operation == "sine" || operation == "Sine" || operation == "SINE") {
             // Trigonometric sine
-            sine.sine();
+            calculator.sine();
         } else if (operation == "tangent" || operation == "Tangent" || operation == "TANGENT") {
             // Trigonometric tangent
-            tangent.tangent();
+            calculator.tangent();
         } else if (operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
             // Square root
-            squareRoot.squareRoot();
+            calculator.squareRoot();
         } else if (operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
             // Cube root
-            cubeRoot.cubeRoot();
+            calculator.cubeRoot();
         } else if (operation == "square" || operation == "Square" || operation == "SQUARE") {
             // Square
-            square.square();
+            calculator.square();
         } else if (operation == "cube" || operation == "Cube" || operation == "CUBE") {
             // Cube
-            cube.cube();
+            calculator.cube();
         } else if (operation == "fourthroot" || operation == "Fourthroot" || operation == "FOURTHROOT") {
             // Fourth root
-            fourthRoot.fourthRoot();
+            calculator.fourthRoot();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
-            contributor.credits();
+            miscellaneous.credits();
             break;
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
             // Exiting
-            programExit.exit();
+            miscellaneous.exit();
             break;
         } else if (operation == "") {
             // No input (user hits RETURN)
-            noInput.emptyInput();
+            miscellaneous.emptyInput();
         } else {
             // User inputted nonsense
-            nonsense.unknownInput();
+            miscellaneous.unknownInput();
         }
         std::cout << "Would you like to perform another operation? [Y/n] ";
         std::cin >> response;
