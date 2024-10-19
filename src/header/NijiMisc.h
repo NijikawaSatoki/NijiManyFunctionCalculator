@@ -4,4 +4,5 @@ class NijiMisc {
         void credits();
         void exit();
         void emptyInput();
+        void unknownInput();
 };

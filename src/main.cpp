@@ -68,6 +68,7 @@ int main() {
         NijiMisc contributor;
         NijiMisc programExit;
         NijiMisc noInput;
+        NijiMisc nonsense;
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
@@ -135,7 +136,7 @@ int main() {
             noInput.emptyInput();
         } else {
             // User inputted nonsense
-            std::cout << "Not a valid operation!!" << std::endl;
+            nonsense.unknownInput();
         }
         std::cout << "Would you like to perform another operation? [Y/n] ";
         std::cin >> response;

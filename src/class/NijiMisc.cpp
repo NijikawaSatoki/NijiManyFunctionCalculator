@@ -39,3 +39,8 @@ void NijiMisc::emptyInput() {
     std::cout << "*sigh*" << std::endl;
     std::cout << "Maybe try saying what input you want next time." << std::endl;
 }
+
+void NijiMisc::unknownInput() {
+    std::cout << "That's not a valid operation!!" << std::endl;
+    std::cout << "Try again!!" << std::endl;
+}
