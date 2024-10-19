@@ -49,6 +49,23 @@ int main() {
             "tangent",  "squareroot",  "cuberoot",       "square",
             "cube"
         };
+        // Initialise the objects
+        // >> NijiMath <<
+        NijiMath add;
+        NijiMath subtract;
+        NijiMath multiply;
+        NijiMath divide;
+        NijiMath modulo;
+        NijiMath exponent;
+        NijiMath cosine;
+        NijiMath sine;
+        NijiMath tangent;
+        NijiMath squareRoot;
+        NijiMath cubeRoot;
+        NijiMath square;
+        NijiMath cube;
+        // >> NijiMisc <<
+        NijiMisc contributor;
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
@@ -66,59 +83,45 @@ int main() {
          * This is about to get messy D: */
         if (operation == "addition" || operation == "Addition" || operation == "ADDITION") {
             // Addition
-            NijiMath add;
-			add.nijiAddition();
+            add.nijiAddition();
         } else if (operation == "subtraction" || operation == "Subtraction" || operation == "SUBTRACTION") {
             // Subtraction
-            NijiMath subtract;
-			subtract.nijiSubtraction();
+            subtract.nijiSubtraction();
         } else if (operation == "multiplication" || operation == "Multiplication" || operation == "MULTIPLICATION") {
             // Multiplication
-            NijiMath multiply;
             multiply.nijiMultiplication();
         } else if (operation == "division" || operation == "Division" || operation == "DIVISION") {
             // Division
-            NijiMath divide;
             divide.nijiDivision();
         } else if (operation == "modulus" || operation == "Modulus" || operation == "MODULUS") {
             // Modulus
-            NijiMath modulo;
             modulo.nijiModulus();
         } else if (operation == "exponent" || operation == "Exponent" || operation == "EXPONENT") {
             // Powers of exponents
-            NijiMath exponent;
             exponent.nijiExponent();
         } else if (operation == "cosine" || operation == "Cosine" || operation == "COSINE") {
             // Trigonometric cosine
-            NijiMath cosine;
             cosine.nijiCosine();
         } else if (operation == "sine" || operation == "Sine" || operation == "SINE") {
             // Trigonometric sine
-            NijiMath sine;
             sine.nijiSine();
         } else if (operation == "tangent" || operation == "Tangent" || operation == "TANGENT") {
             // Trigonometric tangent
-            NijiMath tangent;
             tangent.nijiTangent();
         } else if (operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
             // Square root
-            NijiMath squareRoot;
             squareRoot.nijiSquareRoot();
         } else if (operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
             // Cube root
-            NijiMath cubeRoot;
             cubeRoot.nijiCubeRoot();
         } else if (operation == "square" || operation == "Square" || operation == "SQUARE") {
             // Square
-            NijiMath square;
             square.nijiSquare();
         } else if (operation == "cube" || operation == "Cube" || operation == "CUBE") {
             // Cube
-            NijiMath cube;
             cube.nijiCube();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
-            NijiMisc contributor;
             contributor.credits();
             break;
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
