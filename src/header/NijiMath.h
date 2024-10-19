@@ -5,7 +5,7 @@ class NijiMath {
         void nijiSubtraction();
         void nijiMultiplication();
         void nijiDivision();
-        void nijiModulus();
+        void modulus();
         void nijiExponent();
         void nijiCosine();
         void nijiSine();

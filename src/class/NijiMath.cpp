@@ -16,6 +16,7 @@
 
 // Header libraries
 #include <iostream>
+#include <string>
 #include <cmath>
 
 // User defined headers
@@ -136,7 +137,7 @@ void NijiMath::nijiDivision() {
 
 /* Modulus
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiModulus() {
+void NijiMath::modulus() {
     int x, y;
     int remainder;
     char confirmation;
@@ -211,53 +212,57 @@ void NijiMath::nijiSine() {
     const signed int SINE_OF_3_PI_OVER_2_RADIANS = -1;                  // sin 3π/2 rad
     const int SINE_OF_2_PI_RADIANS = 0;                                 // sin 2π rad
     // Variables
-    float angleThetaInDegrees;
+    std::string angleThetaInDegrees_string;
+    double angleThetaInDegrees;
     long double sine;
     char confirmation;
     std::cout << "*sigh* How do I even explain sine...?" << std::endl;
     do {
         // Ask for angle θ
         std::cout << "What is your angle θ (theta), in degrees? ";
-        std::cin >> angleThetaInDegrees;
-        std::cout << "So you want the sine of a " << angleThetaInDegrees << "° angle." << std::endl;
+        std::cin >> angleThetaInDegrees_string;
+        std::cout << "So you want the sine of a " << angleThetaInDegrees_string << "° angle." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
         std::cin >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Check against predefined sine values
-        if (angleThetaInDegrees == 0) {
+        if (angleThetaInDegrees_string == "0") {
             std::cout << "The sine of a 0° (0 rad) angle is " << SINE_OF_0_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 5) {
+        } else if (angleThetaInDegrees_string == "5") {
             std::cout << "The sine of a 5° (π/36 rad) angle is " << SINE_OF_PI_OVER_36_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 15) {
+        } else if (angleThetaInDegrees_string == "15") {
             std::cout << "The sine of a 15° (π/12 rad) angle is " << SINE_OF_PI_OVER_12_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 22.5) {
+        } else if (angleThetaInDegrees_string == "22.5") {
             std::cout << "The sine of a 22.5° (π/8 rad) angle is " << SINE_OF_PI_OVER_8_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 30) {
+        } else if (angleThetaInDegrees_string == "30") {
             std::cout << "The sine of a 30° (π/6 rad) angle is " << SINE_OF_PI_OVER_6_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 36) {
+        } else if (angleThetaInDegrees_string == "36") {
             std::cout << "The sine of a 36° (π/5 rad) angle is " << SINE_OF_PI_OVER_5_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 45) {
+        } else if (angleThetaInDegrees_string == "45") {
             std::cout << "The sine of a 45° (π/4 rad) angle is " << SINE_OF_PI_OVER_4_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 57.2958) {
+        } else if (angleThetaInDegrees_string == "57.2958") {
             std::cout << "The sine of a ≈57.2958° (1 rad) angle is " << SINE_OF_1_RADIAN << "." << std::endl;
-        } else if (angleThetaInDegrees == 60) {
+        } else if (angleThetaInDegrees_string == "60") {
             std::cout << "The sine of a 60° (π/3 rad) angle is " << SINE_OF_PI_OVER_3_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 72) {
+        } else if (angleThetaInDegrees_string == "72") {
             std::cout << "The sine of a 72° (2π/5 rad) angle is " << SINE_OF_2_PI_OVER_5_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 90) {
+        } else if (angleThetaInDegrees_string == "90") {
             std::cout << "The sine of a 90° (π/2 rad) angle is " << SINE_OF_PI_OVER_2_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 120) {
+        } else if (angleThetaInDegrees_string == "120") {
             std::cout << "The sine of a 120° (2π/3 rad) angle is " << SINE_OF_2_PI_OVER_3_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 144) {
+        } else if (angleThetaInDegrees_string == "144") {
             std::cout << "The sine of a 144° (4π/5 rad) angle is " << SINE_OF_4_PI_OVER_5_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 180) {
+        } else if (angleThetaInDegrees_string == "180") {
             std::cout << "The sine of a 180° (π rad) angle is " << SINE_OF_PI_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 270) {
+        } else if (angleThetaInDegrees_string == "270") {
             std::cout << "The sine of a 270° (3π/2 rad) angle is " << SINE_OF_3_PI_OVER_2_RADIANS << "." << std::endl;
-        } else if (angleThetaInDegrees == 360) {
+        } else if (angleThetaInDegrees_string == "360") {
             std::cout << "The sine of a 360° (2π rad) angle is " << SINE_OF_2_PI_RADIANS << "." << std::endl;
         } else {
+            std::cout << "Now that we're past having to compare floats (really just strings)..." << std::endl;
+            std::cout << "What angle did you want the sine of, again? ";
+            std::cin >> angleThetaInDegrees;
             // Calculate the sine of angle θ
             long double angleThetaInRadians;
             angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
@@ -412,6 +417,7 @@ void NijiMath::nijiCube() {
 /* Fourth root / ∜x
  * Function author: Wamo (Niji System) */
 void NijiMath::nijiFourthRoot() {
+    const float RADICAL_FOUR = 1.0 / 4.0;
     int fourthPower;
     long double fourthRoot;
     char confirmation;
@@ -426,7 +432,7 @@ void NijiMath::nijiFourthRoot() {
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') {
         // Calculates the fourth root
-        fourthRoot = pow(base, 4);
+        fourthRoot = pow(fourthPower, RADICAL_FOUR);
         std::cout << "The fourth root of " << fourthPower << " (∜" << fourthPower << ") is " << fourthRoot << "." << std::endl;
     }
 }

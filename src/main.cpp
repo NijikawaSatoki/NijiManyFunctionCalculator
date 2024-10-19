@@ -99,7 +99,7 @@ int main() {
             divide.nijiDivision();
         } else if (operation == "modulus" || operation == "Modulus" || operation == "MODULUS") {
             // Modulus
-            modulo.nijiModulus();
+            modulo.modulus();
         } else if (operation == "exponent" || operation == "Exponent" || operation == "EXPONENT") {
             // Powers of exponents
             exponent.nijiExponent();
