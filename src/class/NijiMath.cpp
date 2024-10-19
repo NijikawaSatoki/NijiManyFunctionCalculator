@@ -31,7 +31,7 @@ using namespace std;
 
 /* Addition
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_addition() {
+void NijiMath::nijiAddition() {
     int x, y;
     int sum;
     char confirmation;
@@ -56,7 +56,7 @@ void NijiMath::Niji_addition() {
 
 /* Subtraction
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_subtraction() {
+void NijiMath::nijiSubtraction() {
     int x, y;
     signed int difference;
     char confirmation;
@@ -81,7 +81,7 @@ void NijiMath::Niji_subtraction() {
 
 /* Multiplication
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_multiplication() {
+void NijiMath::nijiMultiplication() {
     int x, y;
     int product;
     char confirmation;
@@ -106,7 +106,7 @@ void NijiMath::Niji_multiplication() {
 
 /* Division
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_division() {
+void NijiMath::nijiDivision() {
     double x, y;
     double quotient;
     char confirmation;
@@ -136,7 +136,7 @@ void NijiMath::Niji_division() {
 
 /* Modulus
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_modulus() {
+void NijiMath::nijiModulus() {
     int x, y;
     int remainder;
     char confirmation;
@@ -166,7 +166,7 @@ void NijiMath::Niji_modulus() {
 
 /* Trigonometric cosine
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_cosine() {
+void NijiMath::nijiCosine() {
     const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double cosine;
@@ -191,7 +191,7 @@ void NijiMath::Niji_cosine() {
 
 /* Trigonometric sine
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_sine() {
+void NijiMath::nijiSine() {
     const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double sine;
@@ -216,7 +216,7 @@ void NijiMath::Niji_sine() {
 
 /* Trigonometric tangent
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::Niji_tangent() {
+void NijiMath::nijiTangent() {
     const double PI = 3.1415926535898; // π
     int angleTheta_degrees;
     long double tangent;
@@ -246,7 +246,7 @@ void NijiMath::Niji_tangent() {
 
 /* Powers of exponents / x^y
  * Function author: Wamo (Niji System) */
-void NijiMath::Niji_exponent() {
+void NijiMath::nijiExponent() {
     int base, exponent;
     int exponentResult;
     char confirmation;
@@ -270,7 +270,7 @@ void NijiMath::Niji_exponent() {
 
 /* Square root / √x
  * Function author: Wamo (Niji System) */
-void NijiMath::Niji_squareRoot() {
+void NijiMath::nijiSquareRoot() {
     int square;
     long double squareRoot;
     char confirmation;
@@ -292,7 +292,7 @@ void NijiMath::Niji_squareRoot() {
 
 /* Cube root / ∛x
  * Function author: Wamo (Niji System) */
-void NijiMath::Niji_cubeRoot() {
+void NijiMath::nijiCubeRoot() {
     int cube;
     long double cubeRoot;
     char confirmation;
@@ -314,7 +314,7 @@ void NijiMath::Niji_cubeRoot() {
 
 /* Square / x²
  * Function author: Wamo (Niji System) */
-void NijiMath::Niji_square() {
+void NijiMath::nijiSquare() {
     int base;
     int square;
     char confirmation;
@@ -336,7 +336,7 @@ void NijiMath::Niji_square() {
 
 /* Cube / x³
  * Function author: Wamo (Niji System) */
-void NijiMath::Niji_cube() {
+void NijiMath::nijiCube() {
     int base;
     int cube;
     char confirmation;

@@ -67,55 +67,55 @@ int main() {
         if (operation == "addition" || operation == "Addition" || operation == "ADDITION") {
             // Addition
             NijiMath nijiAdd;
-            nijiAdd.Niji_addition();
+            nijiAdd.nijiAddition();
         } else if (operation == "subtraction" || operation == "Subtraction" || operation == "SUBTRACTION") {
             // Subtraction
             NijiMath nijiSubtract;
-            nijiSubtract.Niji_subtraction();
+            nijiSubtract.nijiSubtraction();
         } else if (operation == "multiplication" || operation == "Multiplication" || operation == "MULTIPLICATION") {
             // Multiplication
             NijiMath nijiMultiply;
-            nijiMultiply.Niji_multiplication();
+            nijiMultiply.nijiMultiplication();
         } else if (operation == "division" || operation == "Division" || operation == "DIVISION") {
             // Division
             NijiMath nijiDivide;
-            nijiDivide.Niji_division();
+            nijiDivide.nijiDivision();
         } else if (operation == "modulus" || operation == "Modulus" || operation == "MODULUS") {
             // Modulus
             NijiMath nijiModulo;
-            nijiModulo.Niji_modulus();
+            nijiModulo.nijiModulus();
         } else if (operation == "exponent" || operation == "Exponent" || operation == "EXPONENT") {
             // Powers of exponents
             NijiMath nijiExponent;
-            nijiExponent.Niji_exponent();
+            nijiExponent.nijiExponent();
         } else if (operation == "cosine" || operation == "Cosine" || operation == "COSINE") {
             // Trigonometric cosine
             NijiMath nijiCosine;
-            nijiCosine.Niji_cosine();
+            nijiCosine.nijiCosine();
         } else if (operation == "sine" || operation == "Sine" || operation == "SINE") {
             // Trigonometric sine
             NijiMath nijiSine;
-            nijiSine.Niji_sine();
+            nijiSine.nijiSine();
         } else if (operation == "tangent" || operation == "Tangent" || operation == "TANGENT") {
             // Trigonometric tangent
             NijiMath nijiTangent;
-            nijiTangent.Niji_tangent();
+            nijiTangent.nijiTangent();
         } else if (operation == "square-root" || operation == "Square-root" || operation == "square-Root" || operation == "SQUARE-root" || operation == "square-ROOT" || operation == "SQUARE-ROOT" || operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
             // Square root
             NijiMath nijiSquareRoot;
-            nijiSquareRoot.Niji_squareRoot();
+            nijiSquareRoot.nijiSquareRoot();
         } else if (operation == "cube-root" || operation == "Cube-root" || operation == "cube-Root" || operation == "CUBE-root" || operation == "cube-ROOT" || operation == "CUBE-ROOT" || operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
             // Cube root
             NijiMath nijiCubeRoot;
-            nijiCubeRoot.Niji_cubeRoot();
+            nijiCubeRoot.nijiCubeRoot();
         } else if (operation == "square" || operation == "Square" || operation == "SQUARE") {
             // Square
             NijiMath nijiSquare;
-            nijiSquare.Niji_square();
+            nijiSquare.nijiSquare();
         } else if (operation == "cube" || operation == "Cube" || operation == "CUBE") {
             // Cube
             NijiMath nijiCube;
-            nijiCube.Niji_cube();
+            nijiCube.nijiCube();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
             NijiMisc contributor;
