@@ -192,7 +192,25 @@ void NijiMath::nijiCosine() {
 /* Trigonometric sine
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMath::nijiSine() {
-    const double PI = 3.1415926535898; // π
+    // Constants
+    const long double PI = 3.1415926535898;                             // π
+    const int SINE_OF_0_RADIANS = 0;                                    // sin 0 rad
+    const long double SINE_OF_PI_OVER_36_RADIANS = 0.08715574274765817; // sin π/36 rad
+    const long double SINE_OF_PI_OVER_12_RADIANS = 0.25881904510252074; // sin π/12 rad
+    const long double SINE_OF_PI_OVER_8_RADIANS = 0.3826834323650898;   // sin π/8 rad
+    const long double SINE_OF_PI_OVER_6_RADIANS = 0.5;                  // sin π/6 rad
+    const long double SINE_OF_PI_OVER_5_RADIANS = 0.5877852522924731;   // sin π/5 rad
+    const long double SINE_OF_PI_OVER_4_RADIANS = 0.7071067811865476;   // sin π/4 rad
+    const long double SINE_OF_1_RADIAN = 0.8414709848078965;            // sin 1 rad
+    const long double SINE_OF_PI_OVER_3_RADIANS = 0.8660254037844386;   // sin π/3 rad
+    const long double SINE_OF_2_PI_OVER_5_RADIANS = 0.9510565162951535; // sin 2π/5 rad
+    const int SINE_OF_PI_OVER_2_RADIANS = 1;                            // sin π/2 rad
+    const long double SINE_OF_2_PI_OVER_3_RADIANS = 0.8660254037844387; // sin 2π/3 rad
+    const long double SINE_OF_4_PI_OVER_5_RADIANS = 0.5877852522924732; // sin 4π/5 rad
+    const int SINE_OF_PI_RADIANS = 0;                                   // sin π rad
+    const signed int SINE_OF_3_PI_OVER_2_RADIANS = -1;                  // sin 3π/2 rad
+    const int SINE_OF_2_PI_RADIANS = 0;                                 // sin 2π rad
+    // Variables
     int angleThetaInDegrees;
     long double sine;
     char confirmation;
@@ -206,11 +224,65 @@ void NijiMath::nijiSine() {
         std::cin >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
-        // Calculate the sine of angle θ
-        long double angleThetaInRadians;
-        angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
-        sine = sin(angleThetaInRadians);
-        std::cout << "The sine of angle θ being " << angleThetaInDegrees << "° is " << sine << "." << std::endl;
+        // Check against predefined sine values
+        switch(angleThetaInDegrees) {
+            case 0:
+                std::cout << "The sine of a 0° (0 rad) angle is " << SINE_OF_0_RADIANS << "." << std::endl;
+                break;
+            case 5:
+                std::cout << "The sine of a 5° (π/36 rad) angle is " << SINE_OF_PI_OVER_36_RADIANS << "." << std::endl;
+                break;
+            case 15:
+                std::cout << "The sine of a 15° (π/12 rad) angle is " << SINE_OF_PI_OVER_12_RADIANS << "." << std::endl;
+                break;
+            case 22:
+                std::cout << "The sine of a 22.5° (π/8 rad) angle is " << SINE_OF_PI_OVER_8_RADIANS << "." << std::endl;
+                break;
+            case 30:
+                std::cout << "The sine of a 30° (π/6 rad) angle is " << SINE_OF_PI_OVER_6_RADIANS << "." << std::endl;
+                break;
+            case 36:
+                std::cout << "The sine of a 36° (π/5 rad) angle is " << SINE_OF_PI_OVER_5_RADIANS << "." << std::endl;
+                break;
+            case 45:
+                std::cout << "The sine of a 45° (π/4 rad) angle is " << SINE_OF_PI_OVER_4_RADIANS << "." << std::endl;
+                break;
+            case 57:
+                std::cout << "The sine of a ≈57.2958° (1 rad) angle is " << SINE_OF_1_RADIAN << "." << std::endl;
+                break;
+            case 60:
+                std::cout << "The sine of a 60° (π/3 rad) angle is " << SINE_OF_PI_OVER_3_RADIANS << "." << std::endl;
+                break;
+            case 72:
+                std::cout << "The sine of a 72° (2π/5 rad) angle is " << SINE_OF_2_PI_OVER_5_RADIANS << "." << std::endl;
+                break;
+            case 90:
+                std::cout << "The sine of a 90° (π/2 rad) angle is " << SINE_OF_PI_OVER_2_RADIANS << "." << std::endl;
+                break;
+            case 120:
+                std::cout << "The sine of a 120° (2π/3 rad) angle is " << SINE_OF_2_PI_OVER_3_RADIANS << "." << std::endl;
+                break;
+            case 144:
+                std::cout << "The sine of a 144° (4π/5 rad) angle is " << SINE_OF_4_PI_OVER_5_RADIANS << "." << std::endl;
+                break;
+            case 180:
+                std::cout << "The sine of a 180° (π rad) angle is " << SINE_OF_PI_RADIANS << "." << std::endl;
+                break;
+            case 270:
+                std::cout << "The sine of a 270° (3π/2 rad) angle is " << SINE_OF_3_PI_OVER_2_RADIANS << "." << std::endl;
+                break;
+            case 360:
+                std::cout << "The sine of a 360° (2π rad) angle is " << SINE_OF_2_PI_RADIANS << "." << std::endl;
+                break;
+            default:
+                // Calculate the sine of angle θ
+                long double angleThetaInRadians;
+                angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
+                sine = sin(angleThetaInRadians);
+                std::cout << "The sine of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << sine << "." << std::endl;
+                break;
+            // END OF SWITCH
+        }
     }
 }
 
