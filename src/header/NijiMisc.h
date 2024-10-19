@@ -1,5 +1,5 @@
 #pragma once
-class CreditsAndContributors {
+class NijiMisc {
     public:
         void credits();
 };

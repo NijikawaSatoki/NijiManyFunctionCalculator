@@ -20,7 +20,7 @@
 
 // User defined headers
 #include "header/NijiMath.h"
-#include "header/CreditsAndContributors.h"
+#include "header/NijiMisc.h"
 
 // Establishes usage of `std' namespace
 using namespace std;
@@ -118,7 +118,7 @@ int main() {
             nijiCube.Niji_cube();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
-            CreditsAndContributors contributor;
+            NijiMisc contributor;
             contributor.credits();
             break;
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
