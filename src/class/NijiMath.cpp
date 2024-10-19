@@ -408,3 +408,25 @@ void NijiMath::nijiCube() {
         std::cout << "The cube of " << base << " (" << base << "³) is " << cube << "." << std::endl;
     }
 }
+
+/* Fourth root / ∜x
+ * Function author: Wamo (Niji System) */
+void NijiMath::nijiFourthRoot() {
+    int fourthPower;
+    long double fourthRoot;
+    char confirmation;
+    std::cout << "Fourth root (∜x) is the reverse of doing x⁴." << std::endl;
+    do {
+        // Ask for the number to find the fourth root of
+        std::cout << "What do you want the fourth root of? ";
+        std::cin >> fourthPower;
+        std::cout << "So you want the fourth root of " << fourthPower << "." << std::endl;
+        std::cout << "Is this correct? [Y/n] ";
+        std::cin >> confirmation;
+    } while (confirmation == 'N' || confirmation == 'n');
+    if (confirmation == 'Y' || confirmation == 'y') {
+        // Calculates the fourth root
+        fourthRoot = pow(base, 4);
+        std::cout << "The fourth root of " << fourthPower << " (∜" << fourthPower << ") is " << fourthRoot << "." << std::endl;
+    }
+}

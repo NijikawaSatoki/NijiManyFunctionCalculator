@@ -14,4 +14,5 @@ class NijiMath {
         void nijiCubeRoot();
         void nijiSquare();
         void nijiCube();
+        void nijiFourthRoot();
 };

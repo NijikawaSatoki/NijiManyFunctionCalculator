@@ -47,7 +47,7 @@ int main() {
             "addition", "subtraction", "multiplication", "division",
             "modulus",  "exponent",    "cosine",         "sine",
             "tangent",  "squareroot",  "cuberoot",       "square",
-            "cube"
+            "cube",     "fourthroot"
         };
         // Initialise the objects
         // >> NijiMath <<
@@ -64,6 +64,7 @@ int main() {
         NijiMath cubeRoot;
         NijiMath square;
         NijiMath cube;
+        NijiMath fourthRoot;
         // >> NijiMisc <<
         NijiMisc contributor;
         NijiMisc programExit;
@@ -76,7 +77,7 @@ int main() {
         std::cout << opList[0] << singleTab << opList[1] << singleTab << opList[2] << singleTab << opList[3] << std::endl;
         std::cout << opList[4] << doubleTab << opList[5] << singleTab << opList[6] << doubleTab << opList[7] << std::endl;
         std::cout << opList[8] << doubleTab << opList[9] << singleTab << opList[10] << singleTab << opList[11] << std::endl;
-        std::cout << opList[12] << std::endl;
+        std::cout << opList[12] << doubleTab << opList[13] << std::endl;
         std::cout << "`credits' shows all contributors and closes the program." << std::endl;
         std::cout << "`exit' closes the program." << std::endl;
         // User inputs what they want
@@ -123,6 +124,9 @@ int main() {
         } else if (operation == "cube" || operation == "Cube" || operation == "CUBE") {
             // Cube
             cube.nijiCube();
+        } else if (operation == "fourthroot" || operation == "Fourthroot" || operation == "FOURTHROOT") {
+            // Fourth root
+            fourthRoot.nijiFourthRoot();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
             contributor.credits();
