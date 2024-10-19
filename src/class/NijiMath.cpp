@@ -185,7 +185,7 @@ void NijiMath::nijiCosine() {
         long double angleThetaInRadians;
         angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
         cosine = cos(angleThetaInRadians);
-        std::cout << "The cosine of angle θ being " << angleThetaInDegrees << "° is " << cosine << "." << std::endl;
+        std::cout << "The cosine of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << cosine << "." << std::endl;
     }
 }
 
