@@ -66,56 +66,56 @@ int main() {
          * This is about to get messy D: */
         if (operation == "addition" || operation == "Addition" || operation == "ADDITION") {
             // Addition
-            NijiMath nijiAdd;
-            nijiAdd.nijiAddition();
+            NijiMath add;
+			add.nijiAddition();
         } else if (operation == "subtraction" || operation == "Subtraction" || operation == "SUBTRACTION") {
             // Subtraction
-            NijiMath nijiSubtract;
-            nijiSubtract.nijiSubtraction();
+            NijiMath subtract;
+			subtract.nijiSubtraction();
         } else if (operation == "multiplication" || operation == "Multiplication" || operation == "MULTIPLICATION") {
             // Multiplication
-            NijiMath nijiMultiply;
-            nijiMultiply.nijiMultiplication();
+            NijiMath multiply;
+            multiply.nijiMultiplication();
         } else if (operation == "division" || operation == "Division" || operation == "DIVISION") {
             // Division
-            NijiMath nijiDivide;
-            nijiDivide.nijiDivision();
+            NijiMath divide;
+            divide.nijiDivision();
         } else if (operation == "modulus" || operation == "Modulus" || operation == "MODULUS") {
             // Modulus
-            NijiMath nijiModulo;
-            nijiModulo.nijiModulus();
+            NijiMath modulo;
+            modulo.nijiModulus();
         } else if (operation == "exponent" || operation == "Exponent" || operation == "EXPONENT") {
             // Powers of exponents
-            NijiMath nijiExponent;
-            nijiExponent.nijiExponent();
+            NijiMath exponent;
+            exponent.nijiExponent();
         } else if (operation == "cosine" || operation == "Cosine" || operation == "COSINE") {
             // Trigonometric cosine
-            NijiMath nijiCosine;
-            nijiCosine.nijiCosine();
+            NijiMath cosine;
+            cosine.nijiCosine();
         } else if (operation == "sine" || operation == "Sine" || operation == "SINE") {
             // Trigonometric sine
-            NijiMath nijiSine;
-            nijiSine.nijiSine();
+            NijiMath sine;
+            sine.nijiSine();
         } else if (operation == "tangent" || operation == "Tangent" || operation == "TANGENT") {
             // Trigonometric tangent
-            NijiMath nijiTangent;
-            nijiTangent.nijiTangent();
+            NijiMath tangent;
+            tangent.nijiTangent();
         } else if (operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
             // Square root
-            NijiMath nijiSquareRoot;
-            nijiSquareRoot.nijiSquareRoot();
+            NijiMath squareRoot;
+            squareRoot.nijiSquareRoot();
         } else if (operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
             // Cube root
-            NijiMath nijiCubeRoot;
-            nijiCubeRoot.nijiCubeRoot();
+            NijiMath cubeRoot;
+            cubeRoot.nijiCubeRoot();
         } else if (operation == "square" || operation == "Square" || operation == "SQUARE") {
             // Square
-            NijiMath nijiSquare;
-            nijiSquare.nijiSquare();
+            NijiMath square;
+            square.nijiSquare();
         } else if (operation == "cube" || operation == "Cube" || operation == "CUBE") {
             // Cube
-            NijiMath nijiCube;
-            nijiCube.nijiCube();
+            NijiMath cube;
+            cube.nijiCube();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
             NijiMisc contributor;
