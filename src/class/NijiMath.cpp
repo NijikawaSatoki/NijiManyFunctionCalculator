@@ -211,7 +211,7 @@ void NijiMath::nijiSine() {
     const signed int SINE_OF_3_PI_OVER_2_RADIANS = -1;                  // sin 3π/2 rad
     const int SINE_OF_2_PI_RADIANS = 0;                                 // sin 2π rad
     // Variables
-    int angleThetaInDegrees;
+    float angleThetaInDegrees;
     long double sine;
     char confirmation;
     std::cout << "*sigh* How do I even explain sine...?" << std::endl;
@@ -225,63 +225,44 @@ void NijiMath::nijiSine() {
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Check against predefined sine values
-        switch(angleThetaInDegrees) {
-            case 0:
-                std::cout << "The sine of a 0° (0 rad) angle is " << SINE_OF_0_RADIANS << "." << std::endl;
-                break;
-            case 5:
+        if (angleThetaInDegrees == 0) {
+            std::cout << "The sine of a 0° (0 rad) angle is " << SINE_OF_0_RADIANS << "." << std::endl;
+        } else if (angleThetaInDegrees == 5) {
                 std::cout << "The sine of a 5° (π/36 rad) angle is " << SINE_OF_PI_OVER_36_RADIANS << "." << std::endl;
-                break;
-            case 15:
+        } else if (angleThetaInDegrees == 15) {
                 std::cout << "The sine of a 15° (π/12 rad) angle is " << SINE_OF_PI_OVER_12_RADIANS << "." << std::endl;
-                break;
-            case 22:
+        } else if (angleThetaInDegrees == 22.5) {
                 std::cout << "The sine of a 22.5° (π/8 rad) angle is " << SINE_OF_PI_OVER_8_RADIANS << "." << std::endl;
-                break;
-            case 30:
+        } else if (angleThetaInDegrees == 30) {
                 std::cout << "The sine of a 30° (π/6 rad) angle is " << SINE_OF_PI_OVER_6_RADIANS << "." << std::endl;
-                break;
-            case 36:
+        } else if (angleThetaInDegrees == 36) {
                 std::cout << "The sine of a 36° (π/5 rad) angle is " << SINE_OF_PI_OVER_5_RADIANS << "." << std::endl;
-                break;
-            case 45:
+        } else if (angleThetaInDegrees == 45) {
                 std::cout << "The sine of a 45° (π/4 rad) angle is " << SINE_OF_PI_OVER_4_RADIANS << "." << std::endl;
-                break;
-            case 57:
+        } else if (angleThetaInDegrees == 57.2958) {
                 std::cout << "The sine of a ≈57.2958° (1 rad) angle is " << SINE_OF_1_RADIAN << "." << std::endl;
-                break;
-            case 60:
+        } else if (angleThetaInDegrees == 60) {
                 std::cout << "The sine of a 60° (π/3 rad) angle is " << SINE_OF_PI_OVER_3_RADIANS << "." << std::endl;
-                break;
-            case 72:
+        } else if (angleThetaInDegrees == 72) {
                 std::cout << "The sine of a 72° (2π/5 rad) angle is " << SINE_OF_2_PI_OVER_5_RADIANS << "." << std::endl;
-                break;
-            case 90:
+        } else if (angleThetaInDegrees == 90) {
                 std::cout << "The sine of a 90° (π/2 rad) angle is " << SINE_OF_PI_OVER_2_RADIANS << "." << std::endl;
-                break;
-            case 120:
+        } else if (angleThetaInDegrees == 120) {
                 std::cout << "The sine of a 120° (2π/3 rad) angle is " << SINE_OF_2_PI_OVER_3_RADIANS << "." << std::endl;
-                break;
-            case 144:
+        } else if (angleThetaInDegrees == 144) {
                 std::cout << "The sine of a 144° (4π/5 rad) angle is " << SINE_OF_4_PI_OVER_5_RADIANS << "." << std::endl;
-                break;
-            case 180:
+        } else if (angleThetaInDegrees == 180) {
                 std::cout << "The sine of a 180° (π rad) angle is " << SINE_OF_PI_RADIANS << "." << std::endl;
-                break;
-            case 270:
+        } else if (angleThetaInDegrees == 270) {
                 std::cout << "The sine of a 270° (3π/2 rad) angle is " << SINE_OF_3_PI_OVER_2_RADIANS << "." << std::endl;
-                break;
-            case 360:
+        } else if (angleThetaInDegrees == 360) {
                 std::cout << "The sine of a 360° (2π rad) angle is " << SINE_OF_2_PI_RADIANS << "." << std::endl;
-                break;
-            default:
+        } else {
                 // Calculate the sine of angle θ
                 long double angleThetaInRadians;
                 angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
                 sine = sin(angleThetaInRadians);
                 std::cout << "The sine of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << sine << "." << std::endl;
-                break;
-            // END OF SWITCH
         }
     }
 }
