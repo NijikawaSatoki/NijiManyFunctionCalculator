@@ -32,13 +32,13 @@ using namespace std;
 
 int main() {
     // Establish some variables
-    char response; // T_T
+    char response;                  // T_T
     std::string singleTab = "\t";
     std::string doubleTab = "\t\t";
     std::string blankLine = "\n\n";
     // Main stuff
-    std::cout << doubleTab << "\"Niji's Many Function Calculator\"" << std::endl; // Title line
-    std::cout << singleTab << "Made by Satoki Nijikawa and Wamo, of Niji System" << blankLine; // Author
+    std::cout << doubleTab << "\"Niji's Many Function Calculator\"" << std::endl;               // Title line
+    std::cout << singleTab << "Made by Satoki Nijikawa and Wamo, of Niji System" << blankLine;  // Author
     do {
         // Variables
         std::string operation = "";
@@ -58,9 +58,9 @@ int main() {
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
         std::cout << "Currently implemented:" << std::endl;
-        std::cout << opList[0] << singleTab << opList[1] << singleTab << opList[2] << singleTab << opList[3] << std::endl;
-        std::cout << opList[4] << doubleTab << opList[5] << singleTab << opList[6] << doubleTab << opList[7] << std::endl;
-        std::cout << opList[8] << doubleTab << opList[9] << singleTab << opList[10] << singleTab << opList[11] << std::endl;
+        std::cout << opList[0]  << singleTab << opList[1]  << singleTab << opList[2]  << singleTab << opList[3]  << std::endl;
+        std::cout << opList[4]  << doubleTab << opList[5]  << singleTab << opList[6]  << doubleTab << opList[7]  << std::endl;
+        std::cout << opList[8]  << doubleTab << opList[9]  << singleTab << opList[10] << singleTab << opList[11] << std::endl;
         std::cout << opList[12] << doubleTab << opList[13] << std::endl;
         std::cout << "`credits' shows all contributors and closes the program." << std::endl;
         std::cout << "`exit' closes the program." << std::endl;

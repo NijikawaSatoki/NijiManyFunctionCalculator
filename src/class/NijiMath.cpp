@@ -40,13 +40,13 @@ void NijiMath::addition() {
     do {
         // Ask for the numbers
         std::cout << "Please enter a number: ";
-        std::cin >> x;
+        std::cin  >> x;
         std::cout << "Please enter another number: ";
-        std::cin >> y;
+        std::cin  >> y;
         // Confirm the user's desire
-        std::cout << "So you want to add " << x << " and " << y << "." << std::endl;
+        std::cout << "So you want to add "      << x << " and " << y << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Add the numbers together
@@ -65,13 +65,13 @@ void NijiMath::subtraction() {
     do {
         // Ask for the numbers
         std::cout << "Please enter a number: ";
-        std::cin >> x;
+        std::cin  >> x;
         std::cout << "Please enter another number: ";
-        std::cin >> y;
+        std::cin  >> y;
         // Confirm the user's desire
         std::cout << "So you want to subtract " << y << " from " << x << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Subtract the first number from the second
@@ -90,13 +90,13 @@ void NijiMath::multiplication() {
     do {
         // Ask for the numbers
         std::cout << "Please enter a number: ";
-        std::cin >> x;
+        std::cin  >> x;
         std::cout << "Please enter another number: ";
-        std::cin >> y;
+        std::cin  >> y;
         // Confirm the user's desire
         std::cout << "So you want to multiply " << x << " by " << y << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Multiplies the two numbers together
@@ -115,13 +115,13 @@ void NijiMath::division() {
     do {
         // Ask for the numbers
         std::cout << "Please enter the number you want to divide: ";
-        std::cin >> x;
+        std::cin  >> x;
         std::cout << "Please enter the number to divide the previous one by: ";
-        std::cin >> y;
+        std::cin  >> y;
         // Confirm the user's desire
-        std::cout << "So you want to divide " << x << " by " << y << "." << std::endl;
+        std::cout << "So you want to divide "   << x << " by " << y << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Check if the user is trying to divide by 0
@@ -145,13 +145,13 @@ void NijiMath::modulus() {
     do {
         // Ask for the numbers
         std::cout << "Please enter the number you want to divide: ";
-        std::cin >> x;
+        std::cin  >> x;
         std::cout << "Please enter the number to divide the previous one by: ";
-        std::cin >> y;
+        std::cin  >> y;
         // Confirm the user's desire
-        std::cout << "So you want to divide " << x << " by " << y << "and take the remainder." << std::endl;
+        std::cout << "So you want to divide "   << x << " by " << y << "and take the remainder." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Check if the user is trying to divide by 0
@@ -168,24 +168,24 @@ void NijiMath::modulus() {
 /* Trigonometric cosine
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMath::cosine() {
-    const double PI = 3.1415926535898; // π
-    int angleThetaInDegrees;
-    long double cosine;
-    char confirmation;
+    const double PI                  = 3.1415926535898; // π
+    int          angleThetaInDegrees;
+    long double  cosine;
+    char         confirmation;
     std::cout << "*sigh* How do I even explain cosine...?" << std::endl;
     do {
         // Ask for angle θ
         std::cout << "What is your angle θ (theta), in degrees? ";
-        std::cin >> angleThetaInDegrees;
-        std::cout << "So you want the cosine of a " << angleThetaInDegrees << "° angle." << std::endl;
+        std::cin  >> angleThetaInDegrees;
+        std::cout << "So you want the cosine of a "                 << angleThetaInDegrees << "° angle." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Calculate the cosine of angle θ
         long double angleThetaInRadians;
         angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
-        cosine = cos(angleThetaInRadians);
+        cosine              = cos(angleThetaInRadians);
         std::cout << "The cosine of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << cosine << "." << std::endl;
     }
 }
@@ -194,36 +194,36 @@ void NijiMath::cosine() {
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMath::sine() {
     // Constants
-    const long double PI = 3.1415926535898;                             // π
-    const int SINE_OF_0_RADIANS = 0;                                    // sin 0 rad
-    const long double SINE_OF_PI_OVER_36_RADIANS = 0.08715574274765817; // sin π/36 rad
-    const long double SINE_OF_PI_OVER_12_RADIANS = 0.25881904510252074; // sin π/12 rad
-    const long double SINE_OF_PI_OVER_8_RADIANS = 0.3826834323650898;   // sin π/8 rad
-    const long double SINE_OF_PI_OVER_6_RADIANS = 0.5;                  // sin π/6 rad
-    const long double SINE_OF_PI_OVER_5_RADIANS = 0.5877852522924731;   // sin π/5 rad
-    const long double SINE_OF_PI_OVER_4_RADIANS = 0.7071067811865476;   // sin π/4 rad
-    const long double SINE_OF_1_RADIAN = 0.8414709848078965;            // sin 1 rad
-    const long double SINE_OF_PI_OVER_3_RADIANS = 0.8660254037844386;   // sin π/3 rad
-    const long double SINE_OF_2_PI_OVER_5_RADIANS = 0.9510565162951535; // sin 2π/5 rad
-    const int SINE_OF_PI_OVER_2_RADIANS = 1;                            // sin π/2 rad
-    const long double SINE_OF_2_PI_OVER_3_RADIANS = 0.8660254037844387; // sin 2π/3 rad
-    const long double SINE_OF_4_PI_OVER_5_RADIANS = 0.5877852522924732; // sin 4π/5 rad
-    const int SINE_OF_PI_RADIANS = 0;                                   // sin π rad
-    const signed int SINE_OF_3_PI_OVER_2_RADIANS = -1;                  // sin 3π/2 rad
-    const int SINE_OF_2_PI_RADIANS = 0;                                 // sin 2π rad
+    const long double PI                          = 3.1415926535898;     // π
+    const int         SINE_OF_0_RADIANS           = 0;                   // sin 0 rad
+    const long double SINE_OF_PI_OVER_36_RADIANS  = 0.08715574274765817; // sin π/36 rad
+    const long double SINE_OF_PI_OVER_12_RADIANS  = 0.25881904510252074; // sin π/12 rad
+    const long double SINE_OF_PI_OVER_8_RADIANS   = 0.3826834323650898;  // sin π/8 rad
+    const long double SINE_OF_PI_OVER_6_RADIANS   = 0.5;                 // sin π/6 rad
+    const long double SINE_OF_PI_OVER_5_RADIANS   = 0.5877852522924731;  // sin π/5 rad
+    const long double SINE_OF_PI_OVER_4_RADIANS   = 0.7071067811865476;  // sin π/4 rad
+    const long double SINE_OF_1_RADIAN            = 0.8414709848078965;  // sin 1 rad
+    const long double SINE_OF_PI_OVER_3_RADIANS   = 0.8660254037844386;  // sin π/3 rad
+    const long double SINE_OF_2_PI_OVER_5_RADIANS = 0.9510565162951535;  // sin 2π/5 rad
+    const int         SINE_OF_PI_OVER_2_RADIANS   = 1;                   // sin π/2 rad
+    const long double SINE_OF_2_PI_OVER_3_RADIANS = 0.8660254037844387;  // sin 2π/3 rad
+    const long double SINE_OF_4_PI_OVER_5_RADIANS = 0.5877852522924732;  // sin 4π/5 rad
+    const int         SINE_OF_PI_RADIANS          = 0;                   // sin π rad
+    const signed int  SINE_OF_3_PI_OVER_2_RADIANS = -1;                  // sin 3π/2 rad
+    const int         SINE_OF_2_PI_RADIANS        = 0;                   // sin 2π rad
     // Variables
     std::string angleThetaInDegrees_string;
-    double angleThetaInDegrees;
+    double      angleThetaInDegrees;
     long double sine;
-    char confirmation;
+    char        confirmation;
     std::cout << "*sigh* How do I even explain sine...?" << std::endl;
     do {
         // Ask for angle θ
         std::cout << "What is your angle θ (theta), in degrees? ";
-        std::cin >> angleThetaInDegrees_string;
-        std::cout << "So you want the sine of a " << angleThetaInDegrees_string << "° angle." << std::endl;
+        std::cin  >> angleThetaInDegrees_string;
+        std::cout << "So you want the sine of a "                   << angleThetaInDegrees_string << "° angle." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Check against predefined sine values
@@ -262,11 +262,11 @@ void NijiMath::sine() {
         } else {
             std::cout << "Now that we're past having to compare floats (really just strings)..." << std::endl;
             std::cout << "What angle did you want the sine of, again? ";
-            std::cin >> angleThetaInDegrees;
+            std::cin  >> angleThetaInDegrees;
             // Calculate the sine of angle θ
             long double angleThetaInRadians;
             angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
-            sine = sin(angleThetaInRadians);
+            sine                = sin(angleThetaInRadians);
             std::cout << "The sine of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << sine << "." << std::endl;
         }
     }
@@ -283,16 +283,16 @@ void NijiMath::tangent() {
     do {
         // Ask for angle θ
         std::cout << "What is your angle θ (theta), in degrees? ";
-        std::cin >> angleThetaInDegrees;
-        std::cout << "So you want the tangent of a " << angleThetaInDegrees << "° angle." << std::endl;
+        std::cin  >> angleThetaInDegrees;
+        std::cout << "So you want the tangent of a "                << angleThetaInDegrees << "° angle." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Calculate the tangent of angle θ
         long double angleThetaInRadians;
         angleThetaInRadians = angleThetaInDegrees * PI / 180.0; // Converts degrees to radians
-        tangent = tan(angleThetaInRadians);
+        tangent             = tan(angleThetaInRadians);
         std::cout << "The tangent of a " << angleThetaInDegrees << "° (" << angleThetaInRadians << " rad) angle is " << tangent << "." << std::endl;
     }
 }
@@ -305,19 +305,19 @@ void NijiMath::tangent() {
 /* Powers of exponents / x^y
  * Function author: Wamo (Niji System) */
 void NijiMath::exponent() {
-    int base, exponent;
-    int exponentResult;
+    int  base, exponent;
+    int  exponentResult;
     char confirmation;
     std::cout << "Exponents (powers) raise a number to the nth power" << std::endl;
     do {
         // Ask for the numbers
         std::cout << "Please enter the base: ";
-        std::cin >> base;
+        std::cin  >> base;
         std::cout << "Please enter the exponent: ";
-        std::cin >> exponent;
-        std::cout << "So you want the answer to " << base << " raised to the power of " << "." << std::endl;
+        std::cin  >> exponent;
+        std::cout << "So you want the answer to "   << base << " raised to the power of " << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Does the exponent thing
@@ -329,17 +329,17 @@ void NijiMath::exponent() {
 /* Square root / √x
  * Function author: Wamo (Niji System) */
 void NijiMath::squareRoot() {
-    int square;
+    int         square;
     long double squareRoot;
-    char confirmation;
+    char        confirmation;
     std::cout << "Square root is the inverse of square (that is, a number raised to the power of 2)" << std::endl;
     do {
         // Ask for the square
         std::cout << "Please enter the square that you want the root of: ";
-        std::cin >> square;
-        std::cout << "So you want the square root of √" << square << "." << std::endl;
+        std::cin  >> square;
+        std::cout << "So you want the square root of √"                    << square << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Calculates the square root
@@ -351,17 +351,17 @@ void NijiMath::squareRoot() {
 /* Cube root / ∛x
  * Function author: Wamo (Niji System) */
 void NijiMath::cubeRoot() {
-    int cube;
+    int         cube;
     long double cubeRoot;
-    char confirmation;
+    char        confirmation;
     std::cout << "Cube root is the inverse of cube (that is, a number raised to the power of 3)" << std::endl;
     do {
         // Ask for the cube
         std::cout << "Please enter the cube that you want the root of: ";
-        std::cin >> cube;
-        std::cout << "So you want the cube root of ∛" << cube << "." << std::endl;
+        std::cin  >> cube;
+        std::cout << "So you want the cube root of ∛"                    << cube << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Calculates the cube root
@@ -373,17 +373,17 @@ void NijiMath::cubeRoot() {
 /* Square / x²
  * Function author: Wamo (Niji System) */
 void NijiMath::square() {
-    int base;
-    int square;
+    int  base;
+    int  square;
     char confirmation;
     std::cout << "Squaring is, at its most basic, multiplying a number by itself, i.e. 2*2. Squaring is often expressed as an exponent, x²." << std::endl;
     do {
         // Ask for the number to be squared
         std::cout << "What do you want the square of? ";
-        std::cin >> base;
-        std::cout << "So you want the square of " << base << "." << std::endl;
+        std::cin  >> base;
+        std::cout << "So you want the square of "        << base << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Calculates the square
@@ -395,17 +395,17 @@ void NijiMath::square() {
 /* Cube / x³
  * Function author: Wamo (Niji System) */
 void NijiMath::cube() {
-    int base;
-    int cube;
+    int  base;
+    int  cube;
     char confirmation;
     std::cout << "Cubing is, at its most basic, multiplying a number by itself three (3) times, i.e. 2*2*2. Cubing is often expressed as an exponent, x³." << std::endl;
     do {
         // Ask for the number to be cubed
         std::cout << "What do you want the cube of? ";
-        std::cin >> base;
-        std::cout << "So you want the cube of " << base << "." << std::endl;
+        std::cin  >> base;
+        std::cout << "So you want the cube of "        << base << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') { // <-- Checks if the user inputted 'Y' or 'y'
         // Calculates the cube
@@ -418,17 +418,17 @@ void NijiMath::cube() {
  * Function author: Wamo (Niji System) */
 void NijiMath::fourthRoot() {
     const float RADICAL_FOUR = 1.0 / 4.0;
-    int fourthPower;
+    int         fourthPower;
     long double fourthRoot;
-    char confirmation;
+    char        confirmation;
     std::cout << "Fourth root (∜x) is the reverse of doing x⁴." << std::endl;
     do {
         // Ask for the number to find the fourth root of
         std::cout << "What do you want the fourth root of? ";
-        std::cin >> fourthPower;
-        std::cout << "So you want the fourth root of " << fourthPower << "." << std::endl;
+        std::cin  >> fourthPower;
+        std::cout << "So you want the fourth root of "        << fourthPower << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
-        std::cin >> confirmation;
+        std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
     if (confirmation == 'Y' || confirmation == 'y') {
         // Calculates the fourth root
