@@ -19,7 +19,7 @@
 #include <string>
 
 // User defined headers
-#include "header/NijiMisc.h"
+#include "../header/NijiMisc.h"
 
 // Establishes usage of `std' namespace
 using namespace std;
