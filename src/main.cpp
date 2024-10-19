@@ -66,6 +66,7 @@ int main() {
         NijiMath cube;
         // >> NijiMisc <<
         NijiMisc contributor;
+        NijiMisc programExit;
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
@@ -126,7 +127,7 @@ int main() {
             break;
         } else if (operation == "exit" || operation == "Exit" || operation == "EXIT") {
             // Exiting
-            std::cout << "Oh." << std::endl;
+            programExit.exit();
             break;
         } else if (operation == "") {
             // No input (user hits RETURN)

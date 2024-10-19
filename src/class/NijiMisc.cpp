@@ -29,3 +29,7 @@ void NijiMisc::credits() {
     std::string singleTab = "\t";
     std::cout << "Niji's Many Function Calculator developed by:" << nextLine << "Satoki Nijikawa" << singleTab << "Wamo" << std::endl;
 }
+
+void NijiMisc::exit() {
+    std::cout << "Oh. I see..." << std::endl;
+}

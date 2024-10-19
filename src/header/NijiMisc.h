@@ -2,4 +2,5 @@
 class NijiMisc {
     public:
         void credits();
+        void exit();
 };
