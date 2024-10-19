@@ -28,8 +28,8 @@ using namespace std;
  * Function author: Satoki Nijikawa (Niji System) */
 void NijiMisc::credits() {
     std::string nextLine = "\n";
-    std::string singleTab = "\t";
-    std::cout << "Niji's Many Function Calculator developed by:" << nextLine << "Satoki Nijikawa" << singleTab << "Wamo" << std::endl;
+    std::string doubleTab = "\t\t";
+    std::cout << "Niji's Many Function Calculator developed by:" << nextLine << "Satoki Nijikawa" << doubleTab << "Wamo" << std::endl;
 }
 
 /* Exit
