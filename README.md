@@ -42,12 +42,12 @@ pacman -S base-devel gcc clang
 
 For GCC:
 ```
-g++ src/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
+g++ src/main.cpp src/class/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
 ```
 
 For Clang:
 ```
-clang++ src/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE
+clang++ src/main.cpp src/class/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE
 ```
 
 Replace `YOUR_TEST_OR_INSTALL_LOCATION_HERE` with path and name of your output file.
