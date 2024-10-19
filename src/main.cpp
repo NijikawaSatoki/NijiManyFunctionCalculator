@@ -67,6 +67,7 @@ int main() {
         // >> NijiMisc <<
         NijiMisc contributor;
         NijiMisc programExit;
+        NijiMisc noInput;
         // Ask the user what operation they wish to perform
         std::cout << "Please state the operation you wish to perform." << std::endl;
         // Currently implemented maths
@@ -131,7 +132,7 @@ int main() {
             break;
         } else if (operation == "") {
             // No input (user hits RETURN)
-            std::cout << "You didn't say what operation you wanted. Like, you do know that I'm *not* a mind reader, right?" << std::endl;
+            noInput.emptyInput();
         } else {
             // User inputted nonsense
             std::cout << "Not a valid operation!!" << std::endl;

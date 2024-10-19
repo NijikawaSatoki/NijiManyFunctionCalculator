@@ -33,3 +33,9 @@ void NijiMisc::credits() {
 void NijiMisc::exit() {
     std::cout << "Oh. I see..." << std::endl;
 }
+
+void NijiMisc::emptyInput() {
+    std::cout << "You didn't say what operation you wanted. Like, you do know that I'm *not* a mind reader, right?" << std::endl;
+    std::cout << "*sigh*" << std::endl;
+    std::cout << "Maybe try saying what input you want next time." << std::endl;
+}
