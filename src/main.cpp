@@ -87,46 +87,46 @@ int main() {
          * This is about to get messy D: */
         if (operation == "addition" || operation == "Addition" || operation == "ADDITION") {
             // Addition
-            add.nijiAddition();
+            add.addition();
         } else if (operation == "subtraction" || operation == "Subtraction" || operation == "SUBTRACTION") {
             // Subtraction
-            subtract.nijiSubtraction();
+            subtract.subtraction();
         } else if (operation == "multiplication" || operation == "Multiplication" || operation == "MULTIPLICATION") {
             // Multiplication
-            multiply.nijiMultiplication();
+            multiply.multiplication();
         } else if (operation == "division" || operation == "Division" || operation == "DIVISION") {
             // Division
-            divide.nijiDivision();
+            divide.division();
         } else if (operation == "modulus" || operation == "Modulus" || operation == "MODULUS") {
             // Modulus
             modulo.modulus();
         } else if (operation == "exponent" || operation == "Exponent" || operation == "EXPONENT") {
             // Powers of exponents
-            exponent.nijiExponent();
+            exponent.exponent();
         } else if (operation == "cosine" || operation == "Cosine" || operation == "COSINE") {
             // Trigonometric cosine
-            cosine.nijiCosine();
+            cosine.cosine();
         } else if (operation == "sine" || operation == "Sine" || operation == "SINE") {
             // Trigonometric sine
-            sine.nijiSine();
+            sine.sine();
         } else if (operation == "tangent" || operation == "Tangent" || operation == "TANGENT") {
             // Trigonometric tangent
-            tangent.nijiTangent();
+            tangent.tangent();
         } else if (operation == "squareroot" || operation == "Squareroot" || operation == "SQUAREROOT") {
             // Square root
-            squareRoot.nijiSquareRoot();
+            squareRoot.squareRoot();
         } else if (operation == "cuberoot" || operation == "Cuberoot" || operation == "CUBEROOT") {
             // Cube root
-            cubeRoot.nijiCubeRoot();
+            cubeRoot.cubeRoot();
         } else if (operation == "square" || operation == "Square" || operation == "SQUARE") {
             // Square
-            square.nijiSquare();
+            square.square();
         } else if (operation == "cube" || operation == "Cube" || operation == "CUBE") {
             // Cube
-            cube.nijiCube();
+            cube.cube();
         } else if (operation == "fourthroot" || operation == "Fourthroot" || operation == "FOURTHROOT") {
             // Fourth root
-            fourthRoot.nijiFourthRoot();
+            fourthRoot.fourthRoot();
         } else if (operation == "credits" || operation == "Credits" || operation == "CREDITS") {
             // Credits & Contributors
             contributor.credits();

@@ -32,7 +32,7 @@ using namespace std;
 
 /* Addition
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiAddition() {
+void NijiMath::addition() {
     int x, y;
     int sum;
     char confirmation;
@@ -57,7 +57,7 @@ void NijiMath::nijiAddition() {
 
 /* Subtraction
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiSubtraction() {
+void NijiMath::subtraction() {
     int x, y;
     signed int difference;
     char confirmation;
@@ -82,7 +82,7 @@ void NijiMath::nijiSubtraction() {
 
 /* Multiplication
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiMultiplication() {
+void NijiMath::multiplication() {
     int x, y;
     int product;
     char confirmation;
@@ -107,7 +107,7 @@ void NijiMath::nijiMultiplication() {
 
 /* Division
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiDivision() {
+void NijiMath::division() {
     double x, y;
     double quotient;
     char confirmation;
@@ -167,7 +167,7 @@ void NijiMath::modulus() {
 
 /* Trigonometric cosine
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiCosine() {
+void NijiMath::cosine() {
     const double PI = 3.1415926535898; // π
     int angleThetaInDegrees;
     long double cosine;
@@ -192,7 +192,7 @@ void NijiMath::nijiCosine() {
 
 /* Trigonometric sine
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiSine() {
+void NijiMath::sine() {
     // Constants
     const long double PI = 3.1415926535898;                             // π
     const int SINE_OF_0_RADIANS = 0;                                    // sin 0 rad
@@ -274,7 +274,7 @@ void NijiMath::nijiSine() {
 
 /* Trigonometric tangent
  * Function author: Satoki Nijikawa (Niji System) */
-void NijiMath::nijiTangent() {
+void NijiMath::tangent() {
     const double PI = 3.1415926535898; // π
     int angleThetaInDegrees;
     long double tangent;
@@ -304,7 +304,7 @@ void NijiMath::nijiTangent() {
 
 /* Powers of exponents / x^y
  * Function author: Wamo (Niji System) */
-void NijiMath::nijiExponent() {
+void NijiMath::exponent() {
     int base, exponent;
     int exponentResult;
     char confirmation;
@@ -328,7 +328,7 @@ void NijiMath::nijiExponent() {
 
 /* Square root / √x
  * Function author: Wamo (Niji System) */
-void NijiMath::nijiSquareRoot() {
+void NijiMath::squareRoot() {
     int square;
     long double squareRoot;
     char confirmation;
@@ -350,7 +350,7 @@ void NijiMath::nijiSquareRoot() {
 
 /* Cube root / ∛x
  * Function author: Wamo (Niji System) */
-void NijiMath::nijiCubeRoot() {
+void NijiMath::cubeRoot() {
     int cube;
     long double cubeRoot;
     char confirmation;
@@ -372,7 +372,7 @@ void NijiMath::nijiCubeRoot() {
 
 /* Square / x²
  * Function author: Wamo (Niji System) */
-void NijiMath::nijiSquare() {
+void NijiMath::square() {
     int base;
     int square;
     char confirmation;
@@ -394,7 +394,7 @@ void NijiMath::nijiSquare() {
 
 /* Cube / x³
  * Function author: Wamo (Niji System) */
-void NijiMath::nijiCube() {
+void NijiMath::cube() {
     int base;
     int cube;
     char confirmation;
@@ -416,7 +416,7 @@ void NijiMath::nijiCube() {
 
 /* Fourth root / ∜x
  * Function author: Wamo (Niji System) */
-void NijiMath::nijiFourthRoot() {
+void NijiMath::fourthRoot() {
     const float RADICAL_FOUR = 1.0 / 4.0;
     int fourthPower;
     long double fourthRoot;

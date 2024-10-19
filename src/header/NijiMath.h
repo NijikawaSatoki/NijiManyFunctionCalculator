@@ -1,18 +1,18 @@
 #pragma once
 class NijiMath {
     public:
-        void nijiAddition();
-        void nijiSubtraction();
-        void nijiMultiplication();
-        void nijiDivision();
+        void addition();
+        void subtraction();
+        void multiplication();
+        void division();
         void modulus();
-        void nijiExponent();
-        void nijiCosine();
-        void nijiSine();
-        void nijiTangent();
-        void nijiSquareRoot();
-        void nijiCubeRoot();
-        void nijiSquare();
-        void nijiCube();
-        void nijiFourthRoot();
+        void exponent();
+        void cosine();
+        void sine();
+        void tangent();
+        void squareRoot();
+        void cubeRoot();
+        void square();
+        void cube();
+        void fourthRoot();
 };
