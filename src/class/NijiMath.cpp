@@ -315,7 +315,7 @@ void NijiMath::exponent() {
         std::cin  >> base;
         std::cout << "Please enter the exponent: ";
         std::cin  >> exponent;
-        std::cout << "So you want the answer to "   << base << " raised to the power of " << "." << std::endl;
+        std::cout << "So you want the answer to "   << base << " raised to the power of " << exponent << "." << std::endl;
         std::cout << "Is this correct? [Y/n] ";
         std::cin  >> confirmation;
     } while (confirmation == 'N' || confirmation == 'n');
