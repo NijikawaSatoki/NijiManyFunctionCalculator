@@ -1,0 +1,5 @@
+#!/bin/sh
+
+clang++ main.cpp \
+NijiMath.cpp \
+-o nijicalc

@@ -2,7 +2,7 @@
 
 ## About
 
-A calculator capable of doing various operations beyond the basic five (addition, subtraction, multiplication, division, and modulus).
+A calculator capable of eventually doing various operations beyond the basic five (addition, subtraction, multiplication, division, and modulus).
 
 ## A Notice to any Potential Contributors
 
@@ -17,7 +17,9 @@ To reiterate, ***this project has zero tolerance for any AI!!***
 
 ## Build Instructions
 
-To build this, just compile the contents of `src/`.
+To build this, just run the build script for your preferred compiler.
+For GCC, run `gcc-build`.
+For Clang, run `clang-build`.
 For this, you'll need `libc` (comes with `base-devel`) and a C/C++ compiler of your choice.
 
 ### Installing `libc` and Compiler of Choice
@@ -49,24 +51,6 @@ For Windows users that are using MSYS2 that want to build, you'll need:
 pacman -S base-devel gcc clang
 ```
 
-### Compiling
-
-For GCC:
-```
-g++ src/main.cpp src/class/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE -Wall
-```
-
-For Clang:
-```
-clang++ src/main.cpp src/class/*.cpp -o YOUR_TEST_OR_INSTALL_LOCATION_HERE
-```
-
-Replace `YOUR_TEST_OR_INSTALL_LOCATION_HERE` with path and name of your output file.
-
 ## To-do
 
-- [ ] Documentation **(Status: in progress)**
-- [x] Move functions to their own file and header (hopefully).
-- [ ] Add arc* operations (`acos(x)` "arccosine", `asin(x)` "arcsine", `atan(x)` "arctangent").
-- [ ] Add hyperbolic operations (`cosh(x)` "hyperbolic cosine", `sinh(x)` "hyperbolic sine", `tanh(x)` "hyperbolic tangent", `acosh(x)` "hyperbolic arccosine", `asinh(x)` "hyperbolic arcsine", `atanh` "hyperbolic arctangent").
-- [ ] Add logarithmic operations.
+- [ ] *shrug*
