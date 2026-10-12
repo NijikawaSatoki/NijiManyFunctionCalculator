@@ -1,4 +1,6 @@
-#pragma once
+#ifndef NIJIMATH_H
+#define NIJIMATH_H
+
 class NijiMath {
 public:
     // Basic operations
@@ -8,3 +10,5 @@ public:
     double division(double x, double y);
     int modulus(int x, int y);
 };
+
+#endif // NIJIMATH_H
