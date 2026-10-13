@@ -44,8 +44,10 @@ int main() {
     do {
         // Show the user the choices that are available
         cout << "Choices:" << endl;
-        cout << "0. Addition\t1. Subtraction\t2. Multiplication" << endl;
-        cout << "3. Division\t4. Modulus" << endl;
+        cout << "0. Addition\t 1. Subtraction\t2. Multiplication" << endl;
+        cout << "3. Division\t 4. Modulus\t5. Bitwise AND" << endl;
+        cout << "6. Bitwise OR\t 7. Bitwise XOR\t8. Bitwise NOT" << endl;
+        cout << "9. Bit Shift Right\t10. Bit Shift Left" << endl;
         cout << "255. Exits the program" << endl;
         // Ask the user to make a selection
         int selection = 0;
@@ -60,9 +62,12 @@ int main() {
         int integerY = 0;
         double floatX = 0.00;
         double floatY = 0.00;
+        short shortX = 0;
+        short shortY = 0;
         signed int signedIntegerAnswer = 0;
         int integerAnswer = 0;
         double floatAnswer = 0.00;
+        short shortAnswer = 0;
         // Execute based on user selection
         switch (selection) {
         case 0: // Addition
@@ -130,13 +135,97 @@ int main() {
             integerAnswer = nijimath.modulus(integerX, integerY);
             printf("%d mod %d = %d\n", integerX, integerY, integerAnswer);
             break;
-        case 5:
+        case 5: // Bitwise AND
+            cout << NULL_NOT_IMPLEMENTED << endl;
+            // Inform the user of the choice that they made
+            cout << "You chose: bitwise AND!" << endl;
+            // Input for 'x'
+            cout << "Please enter a number: ";
+            cin >> shortX;
+            // Input for 'y'
+            cout << "Please enter another number: ";
+            cin >> shortY;
+            // Calculate the result
+            shortAnswer = nijimath.bitwiseAND(shortX, shortY);
+            printf("%hd AND %hd = %hd\n", shortX, shortY, shortAnswer);
+            break;
+        case 6: // Bitwise OR
+            cout << NULL_NOT_IMPLEMENTED << endl;
+            // Inform the user of the choice that they made
+            cout << "You chose: bitwise OR!" << endl;
+            // Input for 'x'
+            cout << "Please enter a number: ";
+            cin >> shortX;
+            // Input for 'y'
+            cout << "Please enter another number: ";
+            cin >> shortY;
+            // Calculate the result
+            shortAnswer = nijimath.bitwiseOR(shortX, shortY);
+            printf("%hd OR %hd = %hd\n", shortX, shortY, shortAnswer);
+            break;
+        case 7: // Bitwise XOR
+            cout << NULL_NOT_IMPLEMENTED << endl;
+            // Inform the user of the choice that they made
+            cout << "You chose: bitwise XOR!" << endl;
+            // Input for 'x'
+            cout << "Please enter a number: ";
+            cin >> shortX;
+            // Input for 'y'
+            cout << "Please enter another number: ";
+            cin >> shortY;
+            // Calculate the result
+            shortAnswer = nijimath.bitwiseXOR(shortX, shortY);
+            printf("%hd XOR %hd = %hd\n", shortX, shortY, shortAnswer);
+            break;
+        case 8: // Bitwise NOT
+            // Inform the user of the choice that they made
+            cout << "You chose: bitwise NOT!" << endl;
+            // Input for 'x'
+            cout << "Please enter a number: ";
+            cin >> shortX;
+            // Calculate the result
+            shortAnswer = nijimath.bitwiseNOT(shortX);
+            printf("NOT %hd = %hd\n", shortX, shortAnswer);
+            break;
+        case 9: // Bit Shift Right
+            // Inform the user of the choice that they made
+            cout << "You chose: bit shift right!" << endl;
+            // Input for 'x'
+            cout << "Please enter a number: ";
+            cin >> shortX;
+            // Input for 'y'
+            cout << "Please enter another number: ";
+            cin >> shortY;
+            // Calculate the result
+            shortAnswer = nijimath.bitShiftLeft(shortX, shortY);
+            printf("%hd shifted %hd right = %hd\n", shortX, shortY, shortAnswer);
+            break;
+        case 10: // Bit Shift Left
+            // Inform the user of the choice that they made
+            cout << "You chose: bit shift left!" << endl;
+            // Input for 'x'
+            cout << "Please enter a number: ";
+            cin >> shortX;
+            // Input for 'y'
+            cout << "Please enter another number: ";
+            cin >> shortY;
+            // Calculate the result
+            shortAnswer = nijimath.bitShiftRight(shortX, shortY);
+            printf("%hd shifted %hd left = %hd\n", shortX, shortY, shortAnswer);
+            break;
+        case 11:
             cout << NULL_NOT_IMPLEMENTED << endl;
             break;
-        case 6:
+        case 12:
             cout << NULL_NOT_IMPLEMENTED << endl;
             break;
-        case 7:
+        case 13:
+            cout << NULL_NOT_IMPLEMENTED << endl;
+            break;
+        case 14:
+            cout << NULL_NOT_IMPLEMENTED << endl;
+            break;
+        case 15:
             cout << NULL_NOT_IMPLEMENTED << endl;
             break;
         case 255: // Exits the program
@@ -156,3 +245,5 @@ int main() {
     cout << "Have a nice day." << endl;
     return 0;
 }
+
+/* >>>>>> END OF FILE <<<<<< */

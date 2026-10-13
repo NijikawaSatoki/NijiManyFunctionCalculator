@@ -37,7 +37,7 @@ using namespace std;
  */
 
 /* -----------------------------------------------------------------------------
- * Basic operations
+ * Arithmetic operations
  * -----------------------------------------------------------------------------
  */
 
@@ -77,3 +77,40 @@ int NijiMath::modulus(int x, int y) {
     }
     return z;
 }
+
+/* -----------------------------------------------------------------------------
+ * Bitwise operations
+ * -----------------------------------------------------------------------------
+ */
+
+short NijiMath::bitwiseAND(short x, short y) {
+    short z = x & y;
+    return z;
+}
+
+short NijiMath::bitwiseOR(short x, short y) {
+    short z = x | y;
+    return z;
+}
+
+short NijiMath::bitwiseXOR(short x, short y) {
+    short z = x ^ y;
+    return z;
+}
+
+short NijiMath::bitwiseNOT(short x) {
+    short y = ~x;
+    return y;
+}
+
+short NijiMath::bitShiftLeft(short x, short y) {
+    short z = x << y;
+    return z;
+}
+
+short NijiMath::bitShiftRight(short x, short y) {
+    short z = x >> y;
+    return z;
+}
+
+/* >>>>>> END OF FILE <<<<<< */
