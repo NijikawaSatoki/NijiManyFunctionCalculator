@@ -237,7 +237,7 @@ int main() {
         if (selection == 255) {
             break;
         } else {
-            cout << "Continue?: ";
+            cout << "Continue? [Y/n]: ";
             cin >> willYouContinue;
         }
     } while (willYouContinue == 'Y' || willYouContinue == 'y');
